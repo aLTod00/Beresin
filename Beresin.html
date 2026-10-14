@@ -1,0 +1,2428 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Beresin: alat bantu mahasiswa untuk kompres foto, ubah gambar ke PDF, atur ukuran pasfoto, hapus latar belakang, pembuat QR code, pixel art, pengingat tugas, hitung kata, dan hitung IPK.">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<title>Beresin | Alat bantu tugas mahasiswa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Pustaka untuk membuat PDF (hanya dipakai di fitur "Gambar ke PDF") -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+:root{
+  --bg:#f1f5f3;
+  --surface:#ffffff;
+  --ink:#10282b;
+  --muted:#587070;
+  --line:#d6e1de;
+  --primary:#0c7a68;
+  --primary-d:#096354;
+  --soft:#e3f2ed;
+  --warn:#a4410f;
+  --warn-bg:#fdeee3;
+  --yellow:#ffc857;
+}
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  line-height:1.55;font-size:16px;
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+.wrap{max-width:860px;margin:0 auto;padding:0 18px 40px}
+a{color:inherit}
+:focus-visible{outline:3px solid #7cc9b9;outline-offset:2px}
+
+/* Header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo{width:40px;height:40px;display:block;flex:none;object-fit:contain}
+.brand b{font-size:22px;font-weight:800;letter-spacing:-.02em}
+.back{display:inline-flex;align-items:center;gap:4px;min-height:42px;padding:0 14px 0 8px;border-radius:999px;background:var(--surface);border:1px solid var(--line);text-decoration:none;font-weight:600;font-size:15px}
+.back svg{width:18px;height:18px}
+
+/* Beranda */
+.hero{padding:14px 0 22px}
+.hero h1{margin:0 0 10px;font-size:clamp(30px,6.4vw,46px);line-height:1.1;font-weight:800;letter-spacing:-.03em;max-width:16ch}
+.hero p{margin:0;color:var(--muted);max-width:54ch}
+.tiles{display:grid;gap:12px;grid-template-columns:1fr}
+.tile{display:flex;align-items:center;gap:14px;padding:16px;background:var(--surface);border:1px solid var(--line);border-radius:20px;text-decoration:none;transition:border-color .15s,transform .15s}
+.tile:hover{border-color:var(--primary)}
+.tile:active{transform:scale(.99)}
+.ico{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;flex:none}
+.ico svg{width:26px;height:26px;fill:none;stroke:var(--ink);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.t1{background:#d8efe6}.t2{background:#d9e8fa}.t3{background:#ffefc2}.t4{background:#fbdde3}.t5{background:#e5e0f7}.t6{background:#d3edf2}
+canvas.checker{background-color:#fff;background-image:linear-gradient(45deg,#d9e2e0 25%,transparent 25%,transparent 75%,#d9e2e0 75%),linear-gradient(45deg,#d9e2e0 25%,transparent 25%,transparent 75%,#d9e2e0 75%);background-size:16px 16px;background-position:0 0,8px 8px;cursor:crosshair}
+.swatches{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.swatch{display:inline-flex;align-items:center;gap:8px}
+.swatch i{width:16px;height:16px;border-radius:50%;border:1px solid rgba(16,40,43,.3);display:inline-block}
+.swatch i.none{background-image:linear-gradient(45deg,#c8d4d1 50%,#fff 50%)}
+input[type=color]{width:46px;height:38px;padding:2px;border:1.5px solid var(--line);border-radius:10px;background:#fff;cursor:pointer}
+.tile h3{margin:0;font-size:17px;font-weight:700}
+.tile p{margin:2px 0 0;color:var(--muted);font-size:14px;line-height:1.4}
+
+/* Halaman alat */
+.head{padding:6px 0 16px}
+.head h2{margin:0;font-size:clamp(26px,5vw,34px);font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.head p{margin:6px 0 0;color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px;margin-bottom:14px}
+.card h3{margin:0 0 12px;font-size:17px;font-weight:700}
+.field{margin-bottom:14px}
+.field:last-child{margin-bottom:0}
+.lb{display:block;font-weight:600;font-size:14px;margin-bottom:6px}
+.hint{font-size:13px;color:var(--muted);margin-top:5px}
+input[type=text],input[type=number],input[type=datetime-local],input[type=time],select,textarea{min-width:0;
+  width:100%;min-height:46px;padding:10px 12px;border:1.5px solid var(--line);border-radius:12px;
+  background:#fff;color:var(--ink);font:inherit;font-size:16px;
+}
+textarea{min-height:220px;resize:vertical;line-height:1.6}
+input:focus,select:focus,textarea:focus{outline:3px solid #bfe3da;border-color:var(--primary)}
+.row{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}
+.row.w2{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.row.w3{grid-template-columns:repeat(auto-fit,minmax(125px,1fr))}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:38px;padding:0 15px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font:inherit;font-size:14px;font-weight:600;cursor:pointer;color:var(--ink)}
+.chip:hover{border-color:var(--primary)}
+.chip.on{background:var(--soft);border-color:var(--primary);color:var(--primary-d)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;border-radius:12px;border:1.5px solid transparent;font:inherit;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none}
+.btn.primary{background:var(--primary);color:#fff}
+.btn.primary:hover{background:var(--primary-d)}
+.btn.ghost{background:#fff;border-color:var(--line);color:var(--ink)}
+.btn.ghost:hover{border-color:var(--primary)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn.block{width:100%}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.icon-btn{width:40px;height:40px;border-radius:10px;border:1.5px solid var(--line);background:#fff;font:inherit;font-size:18px;line-height:1;cursor:pointer;color:var(--ink);display:grid;place-items:center;flex:none}
+.icon-btn:hover:not(:disabled){border-color:var(--primary)}
+.icon-btn:disabled{opacity:.35;cursor:default}
+
+.drop{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;padding:26px 16px;border:2px dashed #b5c9c4;border-radius:18px;background:#f8fbfa;cursor:pointer;position:relative}
+.drop:hover,.drop.over,.drop:focus-within{border-color:var(--primary);background:var(--soft)}
+.drop svg{width:30px;height:30px;fill:none;stroke:var(--primary);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.drop strong{font-size:16px}
+.drop span{font-size:13px;color:var(--muted)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.msg{margin-top:12px;padding:12px 14px;border-radius:12px;background:var(--warn-bg);color:var(--warn);font-size:15px}
+.result{margin-top:14px;padding:16px;border-radius:16px;background:var(--soft)}
+.result h3{margin:0 0 4px}
+.result p{margin:4px 0}
+.big-n{font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1.1}
+
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
+.pair figure{margin:0}
+.pair img{width:100%;height:170px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:12px}
+.pair figcaption{font-size:13px;color:var(--muted);margin-top:4px;text-align:center}
+.one{margin-top:6px}
+.one img{display:block;width:100%;max-height:220px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:12px}
+.fname{font-weight:600;font-size:14px;margin:8px 0 0;word-break:break-all}
+.fmeta{font-size:13px;color:var(--muted);margin:0}
+
+.files{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:8px}
+.files li{display:flex;align-items:center;gap:10px;padding:8px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.files img{width:48px;height:48px;object-fit:cover;border-radius:8px;flex:none;background:#eef3f2}
+.files .nm{flex:1;min-width:0}
+.files .nm b{display:block;font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.files .nm small{color:var(--muted);font-size:12px}
+.files .ctl{display:flex;gap:6px}
+
+.stage{display:flex;justify-content:center;background:#e6eeec;padding:14px;border-radius:16px}
+.stage canvas{display:block;max-width:100%;max-height:380px;width:auto;height:auto;background:#fff;box-shadow:0 0 0 1px rgba(16,40,43,.15)}
+.range{width:100%;accent-color:var(--primary);min-height:32px}
+
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 14px}
+.stat b{display:block;font-size:28px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.main{background:var(--ink);border-color:var(--ink);color:#fff}
+.stat.main span{color:#b8cfcb}
+.bar{height:10px;border-radius:999px;background:#e1ebe8;overflow:hidden;margin:8px 0 6px}
+.bar i{display:block;height:100%;width:0;background:var(--primary);border-radius:999px;transition:width .2s}
+.bar i.over{background:#d9822b}
+
+.irow{display:grid;grid-template-columns:1fr 84px 96px 44px;gap:8px;margin-bottom:8px;align-items:center}
+.irow .r-name{grid-area:auto}
+details.card summary{cursor:pointer;font-weight:700;font-size:16px;min-height:30px}
+details.card[open] summary{margin-bottom:12px}
+.wgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px}
+.wgrid label{font-size:13px;font-weight:600;display:block}
+.wgrid input{margin-top:4px}
+.sub{display:grid;gap:4px}
+
+.t7{background:#fde2d3}.t8{background:#dcecc9}.t9{background:#f9d9ef}
+
+/* Banner pengingat */
+a.alert,div.alert{display:block;padding:13px 16px;border-radius:16px;background:#fff3d6;border:1px solid #f0cf85;color:#5c3d00;font-weight:600;font-size:15px;line-height:1.45;text-decoration:none;margin-bottom:10px}
+.alert.late{background:var(--warn-bg);border-color:#efb99a;color:var(--warn)}
+#home-alert{margin-bottom:14px}
+#t-alert{margin-bottom:4px}
+
+/* Daftar tugas */
+.listhead{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.listhead select{width:auto;min-width:160px}
+.tasks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.task{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:start;padding:12px;border:1px solid var(--line);border-left:5px solid #b8c9c5;border-radius:14px;background:#fff}
+.task.p1{border-left-color:#e0a21b}
+.task.p2{border-left-color:#d4452f}
+.task input[type=checkbox]{width:24px;height:24px;margin:2px 0 0;accent-color:var(--primary);cursor:pointer}
+.task .tt{font-weight:700;font-size:16px;line-height:1.3;word-break:break-word}
+.task .tc{font-size:14px;color:var(--ink);margin-top:2px}
+.task .td{font-size:13px;color:var(--muted);margin-top:2px}
+.task.done .tt{text-decoration:line-through;color:var(--muted)}
+.task .acts{display:flex;gap:6px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.badge{display:inline-flex;align-items:center;min-height:26px;padding:0 10px;border-radius:999px;font-size:12px;font-weight:700;background:#e8eeec;color:var(--ink)}
+.badge.ok{background:#dff1e8;color:#0a5b4c}
+.badge.near{background:#fff1c9;color:#6b4a00}
+.badge.soon{background:#ffe0c4;color:#7a3500}
+.badge.late{background:#fbd9d3;color:#8a2412}
+.badge.p1{background:#fff1c9;color:#6b4a00}
+.badge.p2{background:#fbd9d3;color:#8a2412}
+.badge.today{background:var(--primary);color:#fff}
+
+/* Jadwal kuliah */
+.day{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:14px 16px;margin-bottom:12px}
+.day.now{border-color:var(--primary);box-shadow:0 0 0 2px #bfe3da}
+.day h4{margin:0 0 8px;font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px}
+.cls{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.cls:first-of-type{border-top:0}
+.cls .tm{font-weight:700;font-size:14px;white-space:nowrap}
+.cls .nm2{font-weight:600;word-break:break-word}
+.cls .rm{font-size:13px;color:var(--muted)}
+
+/* Lain-lain */
+canvas.pix{image-rendering:crisp-edges;image-rendering:pixelated}
+label.check{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;cursor:pointer;min-height:36px}
+label.check input{width:22px;height:22px;accent-color:var(--primary)}
+
+.foot{margin-top:26px;text-align:center;font-size:13px;color:var(--muted)}
+
+@media (min-width:600px){
+  .wrap{padding:0 28px 56px}
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .card{padding:22px}
+  .stats{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:559px){
+  .irow{grid-template-columns:1fr 1fr 44px;grid-template-areas:"name name name" "sks grade del"}
+  .irow .r-name{grid-area:name}
+  .irow .r-sks{grid-area:sks}
+  .irow .r-grade{grid-area:grade}
+  .irow .r-del{grid-area:del}
+  .irow{padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .btn.stack{width:100%}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none !important;scroll-behavior:auto !important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <a class="brand" href="#/" aria-label="Beresin, kembali ke beranda">
+      <img class="logo" src="data:image/png;base64,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" alt="" width="40" height="40">
+      <b>Beresin</b>
+    </a>
+    <a class="back" id="back" href="#/" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+      Semua alat
+    </a>
+  </header>
+
+  <main>
+
+    <!-- ============ BERANDA ============ -->
+    <section class="view" data-view="home" data-title="Beresin | Alat bantu tugas mahasiswa">
+      <div class="hero">
+        <h1>Tugas kuliah, beres satu per satu.</h1>
+        <p>Sekolah? Kuliah? Kerja? semuanya beresin disini.</p>
+      </div>
+      <a class="alert" id="home-alert" href="#/tugas" hidden></a>
+      <div class="tiles">
+        <a class="tile" href="#/kompres">
+          <span class="ico t1"><svg viewBox="0 0 24 24"><path d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/></svg></span>
+          <span><h3>Kompres Foto</h3><p>Kecilkan ukuran foto sampai sekian KB</p></span>
+        </a>
+        <a class="tile" href="#/pdf">
+          <span class="ico t2"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 14h6M9 17h4"/></svg></span>
+          <span><h3>Gambar ke PDF</h3><p>Gabungkan foto atau scan jadi satu PDF</p></span>
+        </a>
+        <a class="tile" href="#/pasfoto">
+          <span class="ico t3"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="2.5"/><path d="M7.5 18c.8-2.4 2.5-3.5 4.5-3.5s3.7 1.1 4.5 3.5"/></svg></span>
+          <span><h3>Ukuran Pasfoto</h3><p>Atur ke 2x3, 3x4, 4x6 atau ukuran sendiri</p></span>
+        </a>
+        <a class="tile" href="#/latar">
+          <span class="ico t6"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-8 8"/></svg></span>
+          <span><h3>Hapus Latar Belakang</h3><p>Hilangkan atau ganti warna latar foto</p></span>
+        </a>
+        <a class="tile" href="#/kata">
+          <span class="ico t4"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h14"/></svg></span>
+          <span><h3>Hitung Kata</h3><p>Cek jumlah kata dan karakter tugasmu</p></span>
+        </a>
+        <a class="tile" href="#/ipk">
+          <span class="ico t5"><svg viewBox="0 0 24 24"><path d="M3 9l9-5 9 5-9 5z"/><path d="M7 11.5V16c0 1.5 2.2 3 5 3s5-1.5 5-3v-4.5"/></svg></span>
+          <span><h3>Hitung IPK</h3><p>Hitung IPS semester dan IPK kumulatif</p></span>
+        </a>
+        <a class="tile" href="#/tugas">
+          <span class="ico t7"><svg viewBox="0 0 24 24"><path d="M6 17v-6a6 6 0 0 1 12 0v6l1.5 2h-15z"/><path d="M10 21h4"/></svg></span>
+          <span><h3>Pengingat Tugas</h3><p>Catat tugas, tenggat, dan jadwal kuliah</p></span>
+        </a>
+        <a class="tile" href="#/qr">
+          <span class="ico t8"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><path d="M14 14h3v3h-3zM20 14v6M14 20h3"/></svg></span>
+          <span><h3>Pembuat QR Code</h3><p>Ubah tautan jadi QR code yang bisa diunduh</p></span>
+        </a>
+        <a class="tile" href="#/pixel">
+          <span class="ico t9"><svg viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM9 14h6v6H9z"/></svg></span>
+          <span><h3>Foto jadi Pixel Art</h3><p>Ubah foto biasa jadi gambar kotak bergaya retro</p></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ KOMPRES FOTO ============ -->
+    <section class="view" data-view="kompres" data-title="Kompres Foto | Beresin" hidden>
+      <div class="head">
+        <h2>Kompres Foto</h2>
+        <p>Pilih foto, tentukan batas ukuran, lalu unduh hasilnya. Hasil berformat JPG.</p>
+      </div>
+
+      <div class="card">
+        <label class="drop" id="k-drop">
+          <svg viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+          <strong>Pilih foto</strong>
+          <span>atau seret foto ke sini (JPG, PNG, WEBP)</span>
+          <input class="vh" id="k-file" type="file" accept="image/*">
+        </label>
+        <div id="k-prev" hidden>
+          <ul class="files" id="k-picked"></ul>
+          <div class="one" style="margin-top:12px"><img id="k-orig" alt="Foto asli"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="field">
+          <label class="lb" for="k-kb">Batas ukuran file (KB)</label>
+          <input id="k-kb" type="number" inputmode="numeric" min="5" step="1" value="200">
+          <div class="chips" style="margin-top:10px" id="k-chips">
+            <button type="button" class="chip" data-kb="50">50 KB</button>
+            <button type="button" class="chip" data-kb="100">100 KB</button>
+            <button type="button" class="chip on" data-kb="200">200 KB</button>
+            <button type="button" class="chip" data-kb="500">500 KB</button>
+            <button type="button" class="chip" data-kb="1024">1 MB</button>
+          </div>
+        </div>
+        <button class="btn primary block" id="k-go" disabled>Kompres foto</button>
+        <div class="msg" id="k-msg" role="alert" hidden></div>
+      </div>
+
+      <div class="result" id="k-res" hidden>
+        <h3 id="k-title">Selesai</h3>
+        <p id="k-text"></p>
+        <p class="fmeta" id="k-note"></p>
+        <div class="one"><img id="k-out" alt="Hasil kompres"></div>
+        <div class="actions"><button class="btn primary stack" id="k-dl">Unduh foto</button></div>
+      </div>
+    </section>
+
+    <!-- ============ GAMBAR KE PDF ============ -->
+    <section class="view" data-view="pdf" data-title="Gambar ke PDF | Beresin" hidden>
+      <div class="head">
+        <h2>Gambar ke PDF</h2>
+        <p>Tambahkan satu atau banyak gambar, atur urutannya, lalu jadikan satu file PDF.</p>
+      </div>
+
+      <div class="card">
+        <label class="drop" id="p-drop">
+          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          <strong>Tambah gambar</strong>
+          <span>Bisa pilih beberapa sekaligus (JPG, PNG, WEBP)</span>
+          <input class="vh" id="p-file" type="file" accept="image/*" multiple>
+        </label>
+        <ul class="files" id="p-list"></ul>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="field">
+            <label class="lb" for="p-size">Ukuran kertas</label>
+            <select id="p-size">
+              <option value="a4">A4</option>
+              <option value="f4">F4 / Folio</option>
+              <option value="letter">Letter</option>
+              <option value="fit">Sesuai gambar</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="lb" for="p-margin">Jarak tepi</label>
+            <select id="p-margin">
+              <option value="0">Tanpa jarak</option>
+              <option value="8" selected>Kecil</option>
+              <option value="15">Sedang</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="lb" for="p-qual">Kualitas</label>
+            <select id="p-qual">
+              <option value="high">Tinggi</option>
+              <option value="small" selected>Hemat ukuran</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label class="lb" for="p-name">Nama file</label>
+          <input id="p-name" type="text" value="Dokumen-Beresin" autocomplete="off">
+        </div>
+        <button class="btn primary block" id="p-go" disabled>Buat PDF</button>
+        <div class="msg" id="p-msg" role="alert" hidden></div>
+      </div>
+
+      <div class="result" id="p-res" hidden>
+        <h3>PDF siap</h3>
+        <p id="p-text"></p>
+        <div class="actions"><button class="btn primary stack" id="p-dl">Unduh PDF</button></div>
+      </div>
+    </section>
+
+    <!-- ============ PASFOTO ============ -->
+    <section class="view" data-view="pasfoto" data-title="Ukuran Pasfoto | Beresin" hidden>
+      <div class="head">
+        <h2>Ukuran Pasfoto</h2>
+        <p>Potong dan ubah ukuran foto jadi pasfoto. Geser dan perbesar sampai wajah pas di tengah.</p>
+      </div>
+
+      <div class="card">
+        <label class="drop" id="s-drop">
+          <svg viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+          <strong>Pilih foto</strong>
+          <span>atau seret foto ke sini (JPG, PNG, WEBP)</span>
+          <input class="vh" id="s-file" type="file" accept="image/*">
+        </label>
+        <ul class="files" id="s-picked" hidden></ul>
+      </div>
+
+      <div class="card">
+        <h3>Ukuran hasil</h3>
+        <div class="chips" id="s-chips" style="margin-bottom:14px">
+          <button type="button" class="chip" data-w="2" data-h="3">2 x 3 cm</button>
+          <button type="button" class="chip on" data-w="3" data-h="4">3 x 4 cm</button>
+          <button type="button" class="chip" data-w="4" data-h="6">4 x 6 cm</button>
+        </div>
+        <div class="field">
+          <label class="lb" for="s-unit">Satuan</label>
+          <select id="s-unit">
+            <option value="cm">Sentimeter (untuk dicetak)</option>
+            <option value="px">Piksel (untuk upload online)</option>
+          </select>
+        </div>
+        <div id="s-cmbox" class="row">
+          <div class="field"><label class="lb" for="s-cmw">Lebar (cm)</label><input id="s-cmw" type="number" inputmode="decimal" step="0.1" min="0.5" value="3"></div>
+          <div class="field"><label class="lb" for="s-cmh">Tinggi (cm)</label><input id="s-cmh" type="number" inputmode="decimal" step="0.1" min="0.5" value="4"></div>
+          <div class="field"><label class="lb" for="s-dpi">Ketajaman</label>
+            <select id="s-dpi"><option value="150">150 dpi</option><option value="300" selected>300 dpi (cetak)</option><option value="600">600 dpi</option></select>
+          </div>
+        </div>
+        <div id="s-pxbox" class="row" hidden>
+          <div class="field"><label class="lb" for="s-pxw">Lebar (piksel)</label><input id="s-pxw" type="number" inputmode="numeric" min="20" max="4000" value="300"></div>
+          <div class="field"><label class="lb" for="s-pxh">Tinggi (piksel)</label><input id="s-pxh" type="number" inputmode="numeric" min="20" max="4000" value="400"></div>
+        </div>
+        <p class="hint" id="s-size"></p>
+      </div>
+
+      <div class="card" id="s-work" hidden>
+        <h3>Atur posisi</h3>
+        <div class="stage"><canvas id="s-cv" aria-label="Pratinjau pasfoto"></canvas></div>
+        <div class="field" style="margin-top:14px">
+          <label class="lb" for="s-zoom">Perbesar</label>
+          <input class="range" id="s-zoom" type="range" min="100" max="300" step="2" value="100">
+        </div>
+        <div class="row">
+          <div class="field"><label class="lb" for="s-x">Geser kiri-kanan</label><input class="range" id="s-x" type="range" min="0" max="100" value="50"></div>
+          <div class="field"><label class="lb" for="s-y">Geser atas-bawah</label><input class="range" id="s-y" type="range" min="0" max="100" value="50"></div>
+        </div>
+        <div class="row" style="margin-top:6px">
+          <div class="field">
+            <label class="lb" for="s-fmt">Format file</label>
+            <select id="s-fmt"><option value="jpg">JPG</option><option value="png">PNG</option></select>
+          </div>
+          <div class="field">
+            <label class="lb" for="s-kb">Batas ukuran (KB)</label>
+            <input id="s-kb" type="number" inputmode="numeric" min="5" placeholder="Boleh dikosongkan">
+          </div>
+        </div>
+        <p class="hint">Batas ukuran hanya berlaku untuk format JPG.</p>
+        <button class="btn primary block" id="s-go" style="margin-top:12px">Unduh pasfoto</button>
+        <div class="msg" id="s-msg" role="alert" hidden></div>
+        <p class="hint" id="s-res" style="margin-top:10px" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- ============ HITUNG KATA ============ -->
+    <section class="view" data-view="kata" data-title="Hitung Kata | Beresin" hidden>
+      <div class="head">
+        <h2>Hitung Kata</h2>
+        <p>Tempel atau ketik teks tugasmu. Hitungannya langsung berubah saat kamu mengetik.</p>
+      </div>
+
+      <div class="card">
+        <label class="lb" for="w-text">Teks tugas</label>
+        <textarea id="w-text" placeholder="Tempel atau ketik tugasmu di sini..."></textarea>
+        <div class="actions">
+          <button class="btn ghost stack" id="w-paste" type="button">Tempel dari clipboard</button>
+          <button class="btn ghost stack" id="w-clear" type="button">Hapus teks</button>
+        </div>
+        <div class="msg" id="w-msg" role="alert" hidden></div>
+      </div>
+
+      <div class="stats" aria-live="polite">
+        <div class="stat main"><b id="w-words">0</b><span>Kata</span></div>
+        <div class="stat"><b id="w-chars">0</b><span>Karakter dengan spasi</span></div>
+        <div class="stat"><b id="w-nospace">0</b><span>Karakter tanpa spasi</span></div>
+        <div class="stat"><b id="w-sent">0</b><span>Kalimat</span></div>
+        <div class="stat"><b id="w-para">0</b><span>Paragraf</span></div>
+        <div class="stat"><b id="w-read">0 mnt</b><span>Perkiraan waktu baca</span></div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <div class="field">
+          <label class="lb" for="w-target">Target jumlah kata (opsional)</label>
+          <input id="w-target" type="number" inputmode="numeric" min="1" placeholder="Contoh: 1000">
+        </div>
+        <div class="bar" aria-hidden="true"><i id="w-bar"></i></div>
+        <p class="hint" id="w-tinfo" style="margin:0">Isi target untuk melihat sisa kata yang perlu ditulis.</p>
+      </div>
+    </section>
+
+    <!-- ============ HITUNG IPK ============ -->
+    <section class="view" data-view="ipk" data-title="Hitung IPK | Beresin" hidden>
+      <div class="head">
+        <h2>Hitung IPK</h2>
+        <p>Isi SKS dan nilai tiap mata kuliah. Hasil IPS muncul otomatis di bawah.</p>
+      </div>
+
+      <div class="card">
+        <h3>Mata kuliah semester ini</h3>
+        <div id="i-rows"></div>
+        <div class="actions">
+          <button class="btn ghost stack" id="i-add" type="button">Tambah mata kuliah</button>
+          <button class="btn ghost stack" id="i-reset" type="button">Kosongkan semua</button>
+        </div>
+      </div>
+
+      <details class="card">
+        <summary>Hitung IPK kumulatif (opsional)</summary>
+        <div class="row">
+          <div class="field"><label class="lb" for="i-pipk">IPK sebelumnya</label><input id="i-pipk" type="number" inputmode="decimal" step="0.01" min="0" max="4" placeholder="Contoh: 3,40"></div>
+          <div class="field"><label class="lb" for="i-psks">Total SKS sebelumnya</label><input id="i-psks" type="number" inputmode="numeric" min="0" placeholder="Contoh: 40"></div>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>Ubah bobot nilai</summary>
+        <p class="hint" style="margin-top:0">Skala nilai tiap kampus bisa berbeda. Sesuaikan di sini kalau kampusmu memakai bobot lain.</p>
+        <div class="wgrid" id="i-weights"></div>
+      </details>
+
+      <div class="result" aria-live="polite">
+        <div class="sub">
+          <span class="fmeta">IPS semester ini</span>
+          <div class="big-n" id="i-ips">-</div>
+          <p id="i-info" style="margin:0">Isi SKS dan nilai untuk mulai menghitung.</p>
+        </div>
+        <div class="sub" id="i-cumbox" style="margin-top:16px" hidden>
+          <span class="fmeta">IPK kumulatif</span>
+          <div class="big-n" id="i-ipk">-</div>
+          <p id="i-cuminfo" style="margin:0"></p>
+        </div>
+        <p class="hint" style="margin-top:14px">Predikat hanya perkiraan berdasarkan aturan umum. Cek pedoman akademik kampusmu.</p>
+      </div>
+    </section>
+
+    <!-- ============ HAPUS LATAR BELAKANG ============ -->
+    <section class="view" data-view="latar" data-title="Hapus Latar Belakang | Beresin" hidden>
+      <div class="head">
+        <h2>Hapus Latar Belakang</h2>
+        <p>Hapus latar polos dari foto, lalu biarkan transparan atau ganti warna, misalnya merah atau biru untuk pasfoto.</p>
+      </div>
+
+      <div class="card">
+        <label class="drop" id="b-drop">
+          <svg viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+          <strong>Pilih foto</strong>
+          <span>atau seret foto ke sini (JPG, PNG, WEBP)</span>
+          <input class="vh" id="b-file" type="file" accept="image/*">
+        </label>
+        <ul class="files" id="b-picked" hidden></ul>
+        <div class="msg" id="b-msg" role="alert" hidden></div>
+      </div>
+
+      <div class="card" id="b-work" hidden>
+        <div class="stage"><canvas id="b-cv" class="checker" aria-label="Pratinjau hasil hapus latar"></canvas></div>
+        <p class="hint">Latar belum bersih? Ketuk bagian latar pada foto untuk memilih warna yang mau dihapus.</p>
+
+        <div class="field" style="margin-top:14px">
+          <label class="lb" for="b-tol">Kekuatan penghapusan</label>
+          <input class="range" id="b-tol" type="range" min="5" max="100" value="40">
+          <div class="hint">Naikkan kalau sisa latar masih terlihat. Turunkan kalau bagian wajah atau baju ikut terhapus.</div>
+        </div>
+        <div class="field">
+          <label class="lb" for="b-soft">Kehalusan tepi</label>
+          <input class="range" id="b-soft" type="range" min="0" max="6" value="1">
+        </div>
+        <div class="field">
+          <span class="lb">Latar baru</span>
+          <div class="chips" id="b-chips">
+            <button type="button" class="chip on" data-c="none"><span class="swatch"><i class="none"></i>Transparan</span></button>
+            <button type="button" class="chip" data-c="#ffffff"><span class="swatch"><i style="background:#fff"></i>Putih</span></button>
+            <button type="button" class="chip" data-c="#d9232d"><span class="swatch"><i style="background:#d9232d"></i>Merah</span></button>
+            <button type="button" class="chip" data-c="#1f5fbf"><span class="swatch"><i style="background:#1f5fbf"></i>Biru</span></button>
+            <input type="color" id="b-color" value="#2e9e6b" aria-label="Pilih warna lain">
+          </div>
+        </div>
+        <div class="field">
+          <label class="lb" for="b-fmt">Format file</label>
+          <select id="b-fmt"><option value="png">PNG</option><option value="jpg">JPG</option></select>
+          <div class="hint" id="b-note"></div>
+        </div>
+        <button class="btn ghost block" id="b-auto" type="button" style="margin-bottom:10px">Deteksi latar otomatis</button>
+        <button class="btn primary block" id="b-go" type="button">Unduh hasil</button>
+        <p class="hint" id="b-res" style="margin-top:10px" aria-live="polite"></p>
+      </div>
+    </section>
+
+<!-- ============ HALAMAN FITUR BARU ============ -->
+
+    <!-- ============ PENGINGAT TUGAS ============ -->
+    <section class="view" data-view="tugas" data-title="Pengingat Tugas | Beresin" hidden>
+      <div class="head">
+        <h2>Pengingat Tugas</h2>
+        <p>Catat tugas dan tenggatnya. Beresin mengingatkanmu 1 hari sebelum tenggat.</p>
+      </div>
+
+      <div id="t-alert"></div>
+
+      <div class="card">
+        <h3>Notifikasi</h3>
+        <p id="t-nstate" style="margin:0 0 12px"></p>
+        <div class="actions" style="margin-top:0">
+          <button class="btn primary stack" id="t-nbtn" type="button">Aktifkan notifikasi</button>
+          <button class="btn ghost stack" id="t-ntest" type="button" hidden>Coba kirim contoh</button>
+        </div>
+        <p class="hint">Notifikasi muncul selama Beresin masih terbuka di browser, boleh di tab lain. Kalau halaman ditutup, pengingat akan muncul saat kamu membuka Beresin lagi.</p>
+        <p class="hint" id="t-storewarn" hidden>Penyimpanan browser sedang tidak aktif, jadi tugasmu akan hilang saat halaman ditutup.</p>
+      </div>
+
+      <div class="chips" id="t-tabs" style="margin-bottom:14px">
+        <button type="button" class="chip on" data-p="tasks">Daftar tugas</button>
+        <button type="button" class="chip" data-p="sched">Jadwal kuliah</button>
+      </div>
+
+      <div id="t-pane-tasks">
+        <div class="card">
+          <h3 id="t-formtitle">Tambah tugas</h3>
+          <div class="field">
+            <label class="lb" for="t-title">Nama tugas</label>
+            <input id="t-title" type="text" maxlength="120" placeholder="Contoh: Laporan Praktikum" autocomplete="off">
+          </div>
+          <div class="field">
+            <label class="lb" for="t-course">Mata pelajaran atau mata kuliah</label>
+            <input id="t-course" type="text" maxlength="80" list="t-courses" placeholder="Contoh: Kimia Dasar" autocomplete="off">
+            <datalist id="t-courses"></datalist>
+          </div>
+          <div class="row w2">
+            <div class="field">
+              <label class="lb" for="t-due">Tenggat pengumpulan</label>
+              <input id="t-due" type="datetime-local">
+            </div>
+            <div class="field">
+              <label class="lb" for="t-pri">Prioritas</label>
+              <select id="t-pri">
+                <option value="0">Biasa</option>
+                <option value="1">Penting</option>
+                <option value="2">Mendesak</option>
+              </select>
+            </div>
+          </div>
+          <div class="actions" style="margin-top:0">
+            <button class="btn primary stack" id="t-save" type="button">Tambah tugas</button>
+            <button class="btn ghost stack" id="t-cancel" type="button" hidden>Batal ubah</button>
+          </div>
+          <div class="msg" id="t-msg" role="alert" hidden></div>
+        </div>
+
+        <div class="card">
+          <div class="listhead">
+            <h3 style="margin:0">Belum selesai (<span id="t-count">0</span>)</h3>
+            <select id="t-sort" aria-label="Urutkan tugas">
+              <option value="due">Tenggat terdekat</option>
+              <option value="pri">Prioritas tertinggi</option>
+            </select>
+          </div>
+          <ul class="tasks" id="t-list"></ul>
+          <p class="hint" id="t-empty" style="margin:0">Belum ada tugas. Tambahkan tugas pertamamu di atas.</p>
+        </div>
+
+        <details class="card" id="t-donebox">
+          <summary>Sudah selesai (<span id="t-donecount">0</span>)</summary>
+          <ul class="tasks" id="t-donelist"></ul>
+          <div class="actions"><button class="btn ghost stack" id="t-clear" type="button">Hapus semua yang selesai</button></div>
+        </details>
+      </div>
+
+      <div id="t-pane-sched" hidden>
+        <div class="card">
+          <h3>Tambah jadwal kuliah</h3>
+          <div class="field">
+            <label class="lb" for="j-course">Mata kuliah atau pelajaran</label>
+            <input id="j-course" type="text" maxlength="80" list="t-courses" placeholder="Contoh: Kalkulus 1" autocomplete="off">
+          </div>
+          <div class="row w3">
+            <div class="field">
+              <label class="lb" for="j-day">Hari</label>
+              <select id="j-day">
+                <option value="0">Senin</option><option value="1">Selasa</option><option value="2">Rabu</option>
+                <option value="3">Kamis</option><option value="4">Jumat</option><option value="5">Sabtu</option><option value="6">Minggu</option>
+              </select>
+            </div>
+            <div class="field"><label class="lb" for="j-start">Mulai</label><input id="j-start" type="time" value="08:00"></div>
+            <div class="field"><label class="lb" for="j-end">Selesai</label><input id="j-end" type="time" value="09:40"></div>
+          </div>
+          <div class="field">
+            <label class="lb" for="j-lecturer">Dosen pengampu (opsional)</label>
+            <input id="j-lecturer" type="text" maxlength="80" placeholder="Contoh: Dr. Budi Santoso, M.Si." autocomplete="off">
+          </div>
+          <div class="field">
+            <label class="lb" for="j-room">Ruang atau catatan (opsional)</label>
+            <input id="j-room" type="text" maxlength="60" placeholder="Contoh: Ruang B2.3" autocomplete="off">
+          </div>
+          <button class="btn primary block" id="j-add" type="button">Tambah ke jadwal</button>
+          <div class="msg" id="j-msg" role="alert" hidden></div>
+        </div>
+        <div id="j-days"></div>
+      </div>
+    </section>
+
+    <!-- ============ PEMBUAT QR CODE ============ -->
+    <section class="view" data-view="qr" data-title="Pembuat QR Code | Beresin" hidden>
+      <div class="head">
+        <h2>Pembuat QR Code</h2>
+        <p>Tempel tautan atau tulis teks, QR code langsung jadi dan bisa diunduh.</p>
+      </div>
+
+      <div class="card">
+        <div class="field">
+          <label class="lb" for="q-text">Tautan atau teks</label>
+          <textarea id="q-text" style="min-height:96px" inputmode="url" placeholder="https://contoh.com" autocapitalize="off" autocomplete="off" spellcheck="false"></textarea>
+          <p class="hint" id="q-hint" hidden>Tautan belum diawali https://, jadi sebagian aplikasi pemindai bisa membacanya sebagai teks biasa.
+            <button class="chip" id="q-https" type="button" style="margin-top:8px">Tambahkan https://</button></p>
+        </div>
+        <div class="row w2">
+          <div class="field">
+            <label class="lb" for="q-size">Ukuran gambar</label>
+            <select id="q-size">
+              <option value="256">Kecil (256 px)</option>
+              <option value="512" selected>Sedang (512 px)</option>
+              <option value="1024">Besar (1024 px)</option>
+            </select>
+          </div>
+          <div class="field">
+            <span class="lb">Warna QR</span>
+            <div class="chips" id="q-colors">
+              <button type="button" class="chip on" data-c="#111827" aria-label="Hitam"><span class="swatch"><i style="background:#111827"></i>Hitam</span></button>
+              <button type="button" class="chip" data-c="#1d4ed8" aria-label="Biru"><span class="swatch"><i style="background:#1d4ed8"></i>Biru</span></button>
+              <button type="button" class="chip" data-c="#0c7a68" aria-label="Hijau"><span class="swatch"><i style="background:#0c7a68"></i>Hijau</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="msg" id="q-msg" role="alert" hidden></div>
+      </div>
+
+      <div class="result" id="q-res" hidden>
+        <h3>QR code siap</h3>
+        <div class="stage" style="margin-top:10px"><canvas id="q-cv" class="pix" aria-label="QR code"></canvas></div>
+        <p class="hint" id="q-info" style="margin-top:10px"></p>
+        <div class="actions">
+          <button class="btn primary stack" id="q-png" type="button">Unduh PNG</button>
+          <button class="btn ghost stack" id="q-svg" type="button">Unduh SVG</button>
+        </div>
+        <p class="hint">Sebelum dicetak atau dibagikan, coba pindai dulu dengan kamera HP untuk memastikan tautannya benar.</p>
+      </div>
+    </section>
+
+    <!-- ============ FOTO JADI PIXEL ART ============ -->
+    <section class="view" data-view="pixel" data-title="Foto jadi Pixel Art | Beresin" hidden>
+      <div class="head">
+        <h2>Foto jadi Pixel Art</h2>
+        <p>Ubah foto biasa jadi gambar kotak-kotak bergaya retro, lalu unduh sebagai PNG.</p>
+      </div>
+
+      <div class="card">
+        <label class="drop" id="x-drop">
+          <svg viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+          <strong>Pilih foto</strong>
+          <span>atau seret foto ke sini (JPG, PNG, WEBP)</span>
+          <input class="vh" id="x-file" type="file" accept="image/*">
+        </label>
+        <ul class="files" id="x-picked" hidden></ul>
+        <div class="msg" id="x-msg" role="alert" hidden></div>
+      </div>
+
+      <div class="card" id="x-work" hidden>
+        <h3>Pratinjau</h3>
+        <div class="stage"><canvas id="x-cv" class="pix" aria-label="Pratinjau pixel art"></canvas></div>
+        <p class="hint" id="x-info" style="margin-top:10px"></p>
+
+        <div class="field" style="margin-top:14px">
+          <label class="lb" for="x-size">Jumlah kotak di sisi terpanjang: <b id="x-sizeval">48</b></label>
+          <input class="range" id="x-size" type="range" min="12" max="128" step="1" value="48">
+          <div class="hint">Makin sedikit kotaknya, gambar makin kasar dan retro. Makin banyak, makin halus.</div>
+        </div>
+        <div class="field">
+          <label class="lb" for="x-pal">Warna</label>
+          <select id="x-pal">
+            <option value="auto16" selected>Otomatis, 16 warna</option>
+            <option value="auto8">Otomatis, 8 warna</option>
+            <option value="auto32">Otomatis, 32 warna</option>
+            <option value="orig">Warna asli foto</option>
+            <option value="gb">Game Boy (4 hijau)</option>
+            <option value="pico">PICO-8 (16 warna)</option>
+            <option value="cga">CGA (4 warna)</option>
+            <option value="bw">Hitam putih</option>
+          </select>
+        </div>
+        <div class="field">
+          <label class="check"><input type="checkbox" id="x-dither"> Tambahkan efek titik-titik retro</label>
+        </div>
+        <button class="btn primary block" id="x-go" type="button">Unduh pixel art</button>
+        <p class="hint" id="x-res" style="margin-top:10px" aria-live="polite"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <p class="foot">Beresin dibuat untuk membantumu</p>
+</div>
+
+<script>
+/* ========== Fungsi bantu ========== */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const nf = new Intl.NumberFormat('id-ID', { maximumFractionDigits: 1 });
+const nf0 = new Intl.NumberFormat('id-ID', { maximumFractionDigits: 0 });
+const nf2 = new Intl.NumberFormat('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+function fmt(bytes) {
+  if (bytes < 1024) return nf0.format(bytes) + ' B';
+  if (bytes < 1048576) return nf.format(bytes / 1024) + ' KB';
+  return nf2.format(bytes / 1048576) + ' MB';
+}
+const hide = el => { el.hidden = true; };
+const show = el => { el.hidden = false; };
+function showMsg(el, text) { el.textContent = text; el.hidden = false; }
+const baseName = n => n.replace(/\.[^.]+$/, '');
+const toBlob = (c, type, q) => new Promise(r => c.toBlob(r, type, q));
+
+function saveBlob(blob, name) {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+}
+
+function loadImage(file) {
+  return new Promise((resolve, reject) => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => resolve({ img, url, file });
+    img.onerror = () => {
+      URL.revokeObjectURL(url);
+      reject(new Error('Gambar tidak bisa dibuka. Gunakan file JPG, PNG, atau WEBP.'));
+    };
+    img.src = url;
+  });
+}
+
+function bindDrop(drop, input, cb) {
+  ['dragenter', 'dragover'].forEach(e => drop.addEventListener(e, ev => { ev.preventDefault(); drop.classList.add('over'); }));
+  ['dragleave', 'drop'].forEach(e => drop.addEventListener(e, ev => { ev.preventDefault(); drop.classList.remove('over'); }));
+  drop.addEventListener('drop', ev => {
+    const f = [...ev.dataTransfer.files].filter(x => x.type.startsWith('image/'));
+    if (f.length) cb(f);
+  });
+  input.addEventListener('change', () => {
+    const f = [...input.files];
+    input.value = '';
+    if (f.length) cb(f);
+  });
+}
+
+/* Baris foto terpilih dengan tombol silang (sama seperti daftar di Gambar ke PDF) */
+function pickedRow(ul, file, url, info, onRemove) {
+  ul.innerHTML = '';
+  const li = document.createElement('li');
+  li.innerHTML = '<img alt=""><div class="nm"><b></b><small></small></div><div class="ctl"></div>';
+  li.querySelector('img').src = url;
+  li.querySelector('b').textContent = file.name;
+  li.querySelector('small').textContent = info;
+  const b = document.createElement('button');
+  b.type = 'button';
+  b.className = 'icon-btn';
+  b.textContent = '\u00D7';
+  b.setAttribute('aria-label', 'Hapus foto');
+  b.addEventListener('click', onRemove);
+  li.querySelector('.ctl').appendChild(b);
+  ul.appendChild(li);
+  ul.hidden = false;
+}
+
+/* Cari kualitas JPG tertinggi yang masih di bawah target */
+async function jpegUnder(canvas, target) {
+  let b = await toBlob(canvas, 'image/jpeg', 0.95);
+  if (b.size <= target) return { blob: b, ok: true };
+  let lo = 0.1, hi = 0.95, best = null;
+  for (let i = 0; i < 8; i++) {
+    const m = (lo + hi) / 2;
+    b = await toBlob(canvas, 'image/jpeg', m);
+    if (b.size <= target) { best = b; lo = m; } else { hi = m; }
+  }
+  if (best) return { blob: best, ok: true };
+  b = await toBlob(canvas, 'image/jpeg', 0.1);
+  return { blob: b, ok: b.size <= target };
+}
+
+/* Kalau kualitas saja tidak cukup, kecilkan resolusi sedikit demi sedikit */
+async function compressToTarget(img, target) {
+  const W = img.naturalWidth, H = img.naturalHeight;
+  let scale = Math.min(1, 3000 / Math.max(W, H));
+  let r;
+  for (let i = 0; i < 12; i++) {
+    const c = document.createElement('canvas');
+    c.width = Math.max(1, Math.round(W * scale));
+    c.height = Math.max(1, Math.round(H * scale));
+    const x = c.getContext('2d');
+    x.fillStyle = '#fff';
+    x.fillRect(0, 0, c.width, c.height);
+    x.imageSmoothingQuality = 'high';
+    x.drawImage(img, 0, 0, c.width, c.height);
+    r = await jpegUnder(c, target);
+    r.w = c.width; r.h = c.height;
+    if (r.ok) return r;
+    scale *= 0.75;
+  }
+  return r;
+}
+
+/* ========== Navigasi antar halaman ========== */
+const views = $$('.view');
+function route() {
+  const key = location.hash.replace(/^#\/?/, '') || 'home';
+  const id = views.some(v => v.dataset.view === key) ? key : 'home';
+  views.forEach(v => { v.hidden = v.dataset.view !== id; });
+  $('#back').hidden = id === 'home';
+  document.title = $(`.view[data-view="${id}"]`).dataset.title;
+  window.scrollTo(0, 0);
+}
+addEventListener('hashchange', route);
+route();
+
+/* ========== Fungsi bantu pixel art dan pengingat tugas ========== */
+const DAY_MS = 86400000;
+
+/* Median cut: kurangi warna menjadi n warna wakil. px = [[r,g,b], ...] */
+function medianCut(px, n) {
+  if (!px.length) return [[0, 0, 0]];
+  let boxes = [px.slice()];
+  while (boxes.length < n) {
+    let bi = -1, bestRange = 0, bestCh = 0;
+    boxes.forEach((b, i) => {
+      if (b.length < 2) return;
+      const min = [255, 255, 255], max = [0, 0, 0];
+      for (const p of b) for (let c = 0; c < 3; c++) { if (p[c] < min[c]) min[c] = p[c]; if (p[c] > max[c]) max[c] = p[c]; }
+      for (let c = 0; c < 3; c++) {
+        const range = max[c] - min[c];
+        if (range > bestRange) { bestRange = range; bi = i; bestCh = c; }
+      }
+    });
+    if (bi < 0) break;
+    const box = boxes[bi];
+    box.sort((a, b) => a[bestCh] - b[bestCh]);
+    const mid = box.length >> 1;
+    boxes.splice(bi, 1, box.slice(0, mid), box.slice(mid));
+  }
+  return boxes.map(b => {
+    let r = 0, g = 0, bl = 0;
+    for (const p of b) { r += p[0]; g += p[1]; bl += p[2]; }
+    return [Math.round(r / b.length), Math.round(g / b.length), Math.round(bl / b.length)];
+  });
+}
+
+function nearestColor(palette, r, g, b) {
+  let best = palette[0], bd = Infinity;
+  for (let i = 0; i < palette.length; i++) {
+    const p = palette[i];
+    const dr = p[0] - r, dg = p[1] - g, db = p[2] - b;
+    const d = 2 * dr * dr + 4 * dg * dg + 3 * db * db;
+    if (d < bd) { bd = d; best = p; }
+  }
+  return best;
+}
+
+function ditherSpread(colors) {
+  return Math.round(255 / Math.max(2, Math.cbrt(colors) * 1.8));
+}
+
+/* Hitung mundur tenggat. tone: late | soon (<24 jam) | near (<3 hari) | ok */
+function fmtCountdown(due, now) {
+  let diff = due - now;
+  const late = diff < 0;
+  const abs = Math.abs(diff);
+  const m = Math.floor(abs / 60000), h = Math.floor(m / 60), d = Math.floor(h / 24);
+  let txt;
+  if (d >= 1) txt = (h % 24 === 0) ? `${d} hari` : `${d} hari ${h % 24} jam`;
+  else if (h >= 1) txt = (m % 60 === 0) ? `${h} jam` : `${h} jam ${m % 60} menit`;
+  else txt = `${Math.max(1, m)} menit`;
+  let tone = 'ok';
+  if (late) tone = 'late';
+  else if (diff <= DAY_MS) tone = 'soon';
+  else if (diff <= 3 * DAY_MS) tone = 'near';
+  return { text: late ? `Terlambat ${txt}` : `${txt} lagi`, tone };
+}
+
+const pad2 = n => String(n).padStart(2, '0');
+const dayKey = ms => { const d = new Date(ms); return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`; };
+const toLocalInput = ms => { const d = new Date(ms); return `${dayKey(ms)}T${pad2(d.getHours())}:${pad2(d.getMinutes())}`; };
+
+/* Isi notifikasi: "besok" kalau tenggat di hari berikutnya, "hari ini" kalau tenggat di hari yang sama */
+function reminderBody(title, due, now) {
+  const when = dayKey(due) === dayKey(now) ? 'hari ini' : 'besok';
+  return `${title} akan jatuh tempo ${when}. Jangan lupa diselesaikan!`;
+}
+
+/* Perlu diingatkan: belum selesai, belum pernah dinotifikasi, dan sudah masuk jendela 24 jam sebelum tenggat */
+function shouldNotify(task, now) {
+  return !task.done && !task.notified && now < task.due && now >= task.due - DAY_MS;
+}
+
+/* ========== Pembuat QR code (tanpa pustaka luar) ========== */
+const QR = (() => {
+  /* Aritmetika GF(256) untuk Reed-Solomon */
+  const EXP = new Array(256), LOG = new Array(256);
+  for (let i = 0; i < 8; i++) EXP[i] = 1 << i;
+  for (let i = 8; i < 256; i++) EXP[i] = EXP[i - 4] ^ EXP[i - 5] ^ EXP[i - 6] ^ EXP[i - 8];
+  for (let i = 0; i < 255; i++) LOG[EXP[i]] = i;
+  const gmul = (a, b) => (a && b) ? EXP[(LOG[a] + LOG[b]) % 255] : 0;
+
+  function generator(ec) {
+    let p = [1];
+    for (let i = 0; i < ec; i++) {
+      const q = [1, EXP[i % 255]];
+      const r = new Array(p.length + 1).fill(0);
+      for (let a = 0; a < p.length; a++) for (let b = 0; b < 2; b++) r[a + b] ^= gmul(p[a], q[b]);
+      p = r;
+    }
+    return p;
+  }
+  function ecBytes(data, ec) {
+    const gen = generator(ec);
+    const msg = data.concat(new Array(ec).fill(0));
+    for (let i = 0; i < data.length; i++) {
+      const c = msg[i];
+      if (c !== 0) for (let j = 0; j < gen.length; j++) msg[i + j] ^= gmul(gen[j], c);
+    }
+    return msg.slice(data.length);
+  }
+
+  /* Tabel blok koreksi: tiap versi punya 4 baris (L, M, Q, H); isi [jumlah blok, total kata, kata data] */
+  const RS = [
+    [1,26,19],[1,26,16],[1,26,13],[1,26,9],
+    [1,44,34],[1,44,28],[1,44,22],[1,44,16],
+    [1,70,55],[1,70,44],[2,35,17],[2,35,13],
+    [1,100,80],[2,50,32],[2,50,24],[4,25,9],
+    [1,134,108],[2,67,43],[2,33,15,2,34,16],[2,33,11,2,34,12],
+    [2,86,68],[4,43,27],[4,43,19],[4,43,15],
+    [2,98,78],[4,49,31],[2,32,14,4,33,15],[4,39,13,1,40,14],
+    [2,121,97],[2,60,38,2,61,39],[4,40,18,2,41,19],[4,40,14,2,41,15],
+    [2,146,116],[3,58,36,2,59,37],[4,36,16,4,37,17],[4,36,12,4,37,13],
+    [2,86,68,2,87,69],[4,69,43,1,70,44],[6,43,19,2,44,20],[6,43,15,2,44,16]
+  ];
+  const LEVEL_IDX = { L: 0, M: 1, Q: 2, H: 3 };
+  const LEVEL_BITS = { L: 1, M: 0, Q: 3, H: 2 };
+  const ALIGN = [[], [6,18], [6,22], [6,26], [6,30], [6,34], [6,22,38], [6,24,42], [6,26,46], [6,28,50]];
+
+  function blocksOf(version, level) {
+    const row = RS[(version - 1) * 4 + LEVEL_IDX[level]];
+    const out = [];
+    for (let i = 0; i < row.length; i += 3) {
+      for (let k = 0; k < row[i]; k++) out.push({ total: row[i + 1], data: row[i + 2] });
+    }
+    return out;
+  }
+
+  const bchDigit = d => { let n = 0; while (d !== 0) { n++; d >>>= 1; } return n; };
+  function bchFormat(data) {
+    let d = data << 10;
+    while (bchDigit(d) - bchDigit(0x537) >= 0) d ^= (0x537 << (bchDigit(d) - bchDigit(0x537)));
+    return ((data << 10) | d) ^ 0x5412;
+  }
+  function bchVersion(data) {
+    let d = data << 12;
+    while (bchDigit(d) - bchDigit(0x1F25) >= 0) d ^= (0x1F25 << (bchDigit(d) - bchDigit(0x1F25)));
+    return (data << 12) | d;
+  }
+
+  const MASKS = [
+    (i, j) => (i + j) % 2 === 0,
+    (i, j) => i % 2 === 0,
+    (i, j) => j % 3 === 0,
+    (i, j) => (i + j) % 3 === 0,
+    (i, j) => (Math.floor(i / 2) + Math.floor(j / 3)) % 2 === 0,
+    (i, j) => (i * j) % 2 + (i * j) % 3 === 0,
+    (i, j) => ((i * j) % 2 + (i * j) % 3) % 2 === 0,
+    (i, j) => ((i * j) % 3 + (i + j) % 2) % 2 === 0
+  ];
+
+  function buildMatrix(version, level, mask, codewords) {
+    const n = version * 4 + 17;
+    const m = Array.from({ length: n }, () => new Array(n).fill(null));
+
+    const probe = (row, col) => {
+      for (let r = -1; r <= 7; r++) {
+        if (row + r <= -1 || n <= row + r) continue;
+        for (let c = -1; c <= 7; c++) {
+          if (col + c <= -1 || n <= col + c) continue;
+          m[row + r][col + c] =
+            (0 <= r && r <= 6 && (c === 0 || c === 6)) ||
+            (0 <= c && c <= 6 && (r === 0 || r === 6)) ||
+            (2 <= r && r <= 4 && 2 <= c && c <= 4);
+        }
+      }
+    };
+    probe(0, 0); probe(n - 7, 0); probe(0, n - 7);
+
+    const pos = ALIGN[version - 1];
+    for (let a = 0; a < pos.length; a++) {
+      for (let b = 0; b < pos.length; b++) {
+        const row = pos[a], col = pos[b];
+        if (m[row][col] !== null) continue;
+        for (let r = -2; r <= 2; r++) for (let c = -2; c <= 2; c++) {
+          m[row + r][col + c] = (r === -2 || r === 2 || c === -2 || c === 2 || (r === 0 && c === 0));
+        }
+      }
+    }
+
+    for (let r = 8; r < n - 8; r++) if (m[r][6] === null) m[r][6] = (r % 2 === 0);
+    for (let c = 8; c < n - 8; c++) if (m[6][c] === null) m[6][c] = (c % 2 === 0);
+
+    /* Informasi format */
+    const bits = bchFormat((LEVEL_BITS[level] << 3) | mask);
+    for (let i = 0; i < 15; i++) {
+      const mod = ((bits >> i) & 1) === 1;
+      if (i < 6) m[i][8] = mod;
+      else if (i < 8) m[i + 1][8] = mod;
+      else m[n - 15 + i][8] = mod;
+    }
+    for (let i = 0; i < 15; i++) {
+      const mod = ((bits >> i) & 1) === 1;
+      if (i < 8) m[8][n - i - 1] = mod;
+      else if (i < 9) m[8][15 - i - 1 + 1] = mod;
+      else m[8][15 - i - 1] = mod;
+    }
+    m[n - 8][8] = true;
+
+    /* Informasi versi (mulai versi 7) */
+    if (version >= 7) {
+      const vb = bchVersion(version);
+      for (let i = 0; i < 18; i++) {
+        const mod = ((vb >> i) & 1) === 1;
+        m[Math.floor(i / 3)][i % 3 + n - 8 - 3] = mod;
+        m[i % 3 + n - 8 - 3][Math.floor(i / 3)] = mod;
+      }
+    }
+
+    /* Tempatkan data dengan pola zig-zag */
+    let inc = -1, row = n - 1, bitIndex = 7, byteIndex = 0;
+    const maskFn = MASKS[mask];
+    for (let col = n - 1; col > 0; col -= 2) {
+      if (col === 6) col -= 1;
+      while (true) {
+        for (let c = 0; c < 2; c++) {
+          if (m[row][col - c] === null) {
+            let dark = false;
+            if (byteIndex < codewords.length) dark = ((codewords[byteIndex] >>> bitIndex) & 1) === 1;
+            if (maskFn(row, col - c)) dark = !dark;
+            m[row][col - c] = dark;
+            bitIndex--;
+            if (bitIndex === -1) { byteIndex++; bitIndex = 7; }
+          }
+        }
+        row += inc;
+        if (row < 0 || n <= row) { row -= inc; inc = -inc; break; }
+      }
+    }
+    return m;
+  }
+
+  function penalty(m) {
+    const n = m.length;
+    let score = 0;
+    /* N1: deretan modul sewarna */
+    for (let pass = 0; pass < 2; pass++) {
+      for (let a = 0; a < n; a++) {
+        let run = 1;
+        for (let b = 1; b < n; b++) {
+          const cur = pass ? m[b][a] : m[a][b], prev = pass ? m[b - 1][a] : m[a][b - 1];
+          if (cur === prev) run++;
+          else { if (run >= 5) score += 3 + (run - 5); run = 1; }
+        }
+        if (run >= 5) score += 3 + (run - 5);
+      }
+    }
+    /* N2: blok 2x2 sewarna */
+    for (let r = 0; r < n - 1; r++) for (let c = 0; c < n - 1; c++) {
+      const v = m[r][c];
+      if (v === m[r][c + 1] && v === m[r + 1][c] && v === m[r + 1][c + 1]) score += 3;
+    }
+    /* N3: pola mirip penanda sudut */
+    const A = [1,0,1,1,1,0,1,0,0,0,0], B = [0,0,0,0,1,0,1,1,1,0,1];
+    for (let pass = 0; pass < 2; pass++) {
+      for (let a = 0; a < n; a++) for (let b = 0; b <= n - 11; b++) {
+        let okA = true, okB = true;
+        for (let k = 0; k < 11 && (okA || okB); k++) {
+          const v = (pass ? m[b + k][a] : m[a][b + k]) ? 1 : 0;
+          if (v !== A[k]) okA = false;
+          if (v !== B[k]) okB = false;
+        }
+        if (okA) score += 40;
+        if (okB) score += 40;
+      }
+    }
+    /* N4: keseimbangan gelap dan terang */
+    let dark = 0;
+    for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (m[r][c]) dark++;
+    const pct = dark * 100 / (n * n);
+    score += Math.floor(Math.abs(pct - 50) / 5) * 10;
+    return score;
+  }
+
+  /* Hasil: { size, isDark(r, c), version } atau null jika teks terlalu panjang */
+  function make(text, level) {
+    level = level || 'M';
+    const bytes = Array.from(new TextEncoder().encode(text));
+    let version = 0, blocks = null;
+    for (let v = 1; v <= 10; v++) {
+      const bl = blocksOf(v, level);
+      const total = bl.reduce((s, b) => s + b.data, 0);
+      const need = 4 + (v < 10 ? 8 : 16) + bytes.length * 8;
+      if (need <= total * 8) { version = v; blocks = bl; break; }
+    }
+    if (!version) return null;
+
+    const bits = [];
+    const put = (num, len) => { for (let i = len - 1; i >= 0; i--) bits.push((num >>> i) & 1); };
+    const totalData = blocks.reduce((s, b) => s + b.data, 0);
+    put(4, 4);
+    put(bytes.length, version < 10 ? 8 : 16);
+    bytes.forEach(b => put(b, 8));
+    if (bits.length + 4 <= totalData * 8) put(0, 4);
+    while (bits.length % 8 !== 0) bits.push(0);
+    for (let pad = 0xEC; bits.length < totalData * 8; pad = pad === 0xEC ? 0x11 : 0xEC) put(pad, 8);
+
+    const data = [];
+    for (let i = 0; i < bits.length; i += 8) {
+      let v = 0;
+      for (let k = 0; k < 8; k++) v = (v << 1) | bits[i + k];
+      data.push(v);
+    }
+
+    let offset = 0, maxDc = 0, maxEc = 0;
+    const dcs = [], ecs = [];
+    blocks.forEach(b => {
+      const dc = data.slice(offset, offset + b.data);
+      offset += b.data;
+      const ec = ecBytes(dc, b.total - b.data);
+      dcs.push(dc); ecs.push(ec);
+      maxDc = Math.max(maxDc, dc.length);
+      maxEc = Math.max(maxEc, ec.length);
+    });
+    const codewords = [];
+    for (let i = 0; i < maxDc; i++) dcs.forEach(dc => { if (i < dc.length) codewords.push(dc[i]); });
+    for (let i = 0; i < maxEc; i++) ecs.forEach(ec => { if (i < ec.length) codewords.push(ec[i]); });
+
+    let best = null, bestScore = Infinity;
+    for (let mask = 0; mask < 8; mask++) {
+      const m = buildMatrix(version, level, mask, codewords);
+      const s = penalty(m);
+      if (s < bestScore) { bestScore = s; best = m; }
+    }
+    return { size: best.length, version, isDark: (r, c) => best[r][c] === true };
+  }
+
+  return { make };
+})();
+
+/* ========== 1. Kompres foto ========== */
+(() => {
+  const drop = $('#k-drop'), input = $('#k-file'), kb = $('#k-kb'), go = $('#k-go');
+  const msg = $('#k-msg'), res = $('#k-res'), prev = $('#k-prev');
+  let cur = null, out = null, outUrl = null;
+
+  $$('#k-chips .chip').forEach(ch => ch.addEventListener('click', () => {
+    kb.value = ch.dataset.kb; syncChips();
+  }));
+  function syncChips() {
+    $$('#k-chips .chip').forEach(c => c.classList.toggle('on', c.dataset.kb === String(kb.value)));
+  }
+  kb.addEventListener('input', syncChips);
+
+  function clearPick() {
+    if (go.disabled) return;   // sedang memproses
+    if (cur) URL.revokeObjectURL(cur.url);
+    if (outUrl) { URL.revokeObjectURL(outUrl); outUrl = null; }
+    cur = null; out = null;
+    $('#k-orig').removeAttribute('src');
+    hide(prev); hide(res); hide(msg);
+    go.disabled = true;
+  }
+
+  bindDrop(drop, input, async files => {
+    hide(msg); hide(res);
+    try {
+      if (cur) URL.revokeObjectURL(cur.url);
+      cur = await loadImage(files[0]);
+      $('#k-orig').src = cur.url;
+      pickedRow($('#k-picked'), cur.file, cur.url, `${fmt(cur.file.size)}, ${cur.img.naturalWidth} x ${cur.img.naturalHeight} piksel`, clearPick);
+      show(prev);
+      go.disabled = false;
+    } catch (e) {
+      cur = null; go.disabled = true; hide(prev);
+      showMsg(msg, e.message);
+    }
+  });
+
+  go.addEventListener('click', async () => {
+    if (!cur) return;
+    const t = Math.round(+kb.value);
+    if (!(t >= 5)) { showMsg(msg, 'Isi batas ukuran minimal 5 KB.'); return; }
+    hide(msg); hide(res);
+    go.disabled = true; go.textContent = 'Sedang memproses...';
+    try {
+      const orig = cur.file.size;
+      let r, name, same = false;
+      if (orig <= t * 1024) {
+        same = true;
+        r = { blob: cur.file, w: cur.img.naturalWidth, h: cur.img.naturalHeight, ok: true };
+        name = cur.file.name;
+      } else {
+        r = await compressToTarget(cur.img, t * 1024);
+        name = baseName(cur.file.name) + '-kompres.jpg';
+      }
+      out = { blob: r.blob, name };
+      if (outUrl) URL.revokeObjectURL(outUrl);
+      outUrl = URL.createObjectURL(r.blob);
+      $('#k-out').src = outUrl;
+
+      if (same) {
+        $('#k-title').textContent = 'Fotomu sudah cukup kecil';
+        $('#k-text').textContent = `Ukuran fotomu ${fmt(orig)}, sudah di bawah ${nf0.format(t)} KB. Foto tidak diubah.`;
+      } else if (r.ok) {
+        const pct = Math.round((1 - r.blob.size / orig) * 100);
+        $('#k-title').textContent = 'Selesai';
+        $('#k-text').textContent = `Dari ${fmt(orig)} menjadi ${fmt(r.blob.size)} (turun ${pct}%).`;
+      } else {
+        $('#k-title').textContent = 'Belum sampai target';
+        $('#k-text').textContent = `Ukuran terkecil yang bisa dicapai ${fmt(r.blob.size)}. Coba isi batas ukuran yang lebih besar.`;
+      }
+      const shrunk = r.w < cur.img.naturalWidth;
+      $('#k-note').textContent = `Resolusi hasil ${r.w} x ${r.h} piksel.` + (shrunk ? ' Resolusi dikecilkan supaya muat di batas ukuran.' : '');
+      show(res);
+      res.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } catch (e) {
+      showMsg(msg, 'Terjadi masalah saat memproses foto. Coba foto lain atau muat ulang halaman.');
+    } finally {
+      go.disabled = false; go.textContent = 'Kompres foto';
+    }
+  });
+
+  $('#k-dl').addEventListener('click', () => { if (out) saveBlob(out.blob, out.name); });
+})();
+
+/* ========== 2. Gambar ke PDF ========== */
+(() => {
+  const drop = $('#p-drop'), input = $('#p-file'), list = $('#p-list'), go = $('#p-go');
+  const msg = $('#p-msg'), res = $('#p-res');
+  let items = [], seq = 0, pdfBlob = null, pdfName = '';
+
+  bindDrop(drop, input, files => {
+    hide(msg); hide(res);
+    files.forEach(f => items.push({ id: ++seq, file: f, url: URL.createObjectURL(f) }));
+    render();
+  });
+
+  function render() {
+    list.innerHTML = '';
+    items.forEach((it, i) => {
+      const li = document.createElement('li');
+      li.innerHTML = '<img alt=""><div class="nm"><b></b><small></small></div><div class="ctl"></div>';
+      li.querySelector('img').src = it.url;
+      li.querySelector('b').textContent = `${i + 1}. ${it.file.name}`;
+      li.querySelector('small').textContent = fmt(it.file.size);
+      const ctl = li.querySelector('.ctl');
+      const mk = (label, txt, fn, dis) => {
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'icon-btn'; b.textContent = txt;
+        b.setAttribute('aria-label', label); b.disabled = !!dis;
+        b.addEventListener('click', fn); ctl.appendChild(b);
+      };
+      mk('Naikkan urutan', '\u2191', () => move(i, -1), i === 0);
+      mk('Turunkan urutan', '\u2193', () => move(i, 1), i === items.length - 1);
+      mk('Hapus gambar', '\u00D7', () => remove(i));
+      list.appendChild(li);
+    });
+    go.disabled = items.length === 0;
+    go.textContent = items.length > 1 ? `Buat PDF dari ${items.length} gambar` : 'Buat PDF';
+  }
+  function move(i, d) {
+    const j = i + d;
+    if (j < 0 || j >= items.length) return;
+    [items[i], items[j]] = [items[j], items[i]];
+    hide(res); render();
+  }
+  function remove(i) {
+    URL.revokeObjectURL(items[i].url);
+    items.splice(i, 1);
+    hide(res); render();
+  }
+
+  go.addEventListener('click', async () => {
+    hide(msg); hide(res);
+    const lib = window.jspdf && window.jspdf.jsPDF;
+    if (!lib) {
+      showMsg(msg, 'Pustaka PDF belum termuat. Periksa koneksi internet, lalu muat ulang halaman.');
+      return;
+    }
+    const sizes = { a4: [210, 297], f4: [215, 330], letter: [216, 279] };
+    const sizeKey = $('#p-size').value;
+    const margin = +$('#p-margin').value;
+    const high = $('#p-qual').value === 'high';
+    const maxSide = high ? 2400 : 1500, q = high ? 0.92 : 0.72;
+    go.disabled = true;
+    let doc = null;
+    try {
+      for (let i = 0; i < items.length; i++) {
+        go.textContent = `Memproses gambar ${i + 1} dari ${items.length}...`;
+        const { img, url } = await loadImage(items[i].file);
+        let w = img.naturalWidth, h = img.naturalHeight;
+        const k = Math.min(1, maxSide / Math.max(w, h));
+        const cw = Math.max(1, Math.round(w * k)), ch = Math.max(1, Math.round(h * k));
+        const c = document.createElement('canvas');
+        c.width = cw; c.height = ch;
+        const x = c.getContext('2d');
+        x.fillStyle = '#fff'; x.fillRect(0, 0, cw, ch);
+        x.imageSmoothingQuality = 'high';
+        x.drawImage(img, 0, 0, cw, ch);
+        const data = c.toDataURL('image/jpeg', q);
+        URL.revokeObjectURL(url);
+
+        let pw, ph, m;
+        if (sizeKey === 'fit') { pw = 210; ph = 210 * h / w; m = 0; }
+        else {
+          [pw, ph] = sizes[sizeKey];
+          if (w > h) [pw, ph] = [ph, pw];
+          m = margin;
+        }
+        const orient = pw > ph ? 'l' : 'p';
+        if (!doc) doc = new lib({ orientation: orient, unit: 'mm', format: [pw, ph], compress: true });
+        else doc.addPage([pw, ph], orient);
+        const r = Math.min((pw - 2 * m) / w, (ph - 2 * m) / h);
+        const dw = w * r, dh = h * r;
+        doc.addImage(data, 'JPEG', (pw - dw) / 2, (ph - dh) / 2, dw, dh, undefined, 'FAST');
+      }
+      pdfBlob = doc.output('blob');
+      const safe = ($('#p-name').value.trim() || 'Dokumen-Beresin').replace(/[\\/:*?"<>|]+/g, '-');
+      pdfName = safe.replace(/\.pdf$/i, '') + '.pdf';
+      $('#p-text').textContent = `${items.length} halaman, ukuran file ${fmt(pdfBlob.size)}.`;
+      show(res);
+      res.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } catch (e) {
+      showMsg(msg, 'PDF gagal dibuat. Coba kurangi jumlah gambar atau pilih kualitas "Hemat ukuran".');
+    } finally {
+      go.disabled = items.length === 0;
+      go.textContent = items.length > 1 ? `Buat PDF dari ${items.length} gambar` : 'Buat PDF';
+    }
+  });
+
+  $('#p-dl').addEventListener('click', () => { if (pdfBlob) saveBlob(pdfBlob, pdfName); });
+})();
+
+/* ========== 3. Ukuran pasfoto ========== */
+(() => {
+  const drop = $('#s-drop'), input = $('#s-file'), cv = $('#s-cv'), ctx = cv.getContext('2d');
+  const unit = $('#s-unit'), cmW = $('#s-cmw'), cmH = $('#s-cmh'), pxW = $('#s-pxw'), pxH = $('#s-pxh');
+  const dpi = $('#s-dpi'), zoom = $('#s-zoom'), sx = $('#s-x'), sy = $('#s-y');
+  const fmtSel = $('#s-fmt'), maxkb = $('#s-kb'), go = $('#s-go'), msg = $('#s-msg');
+  const size = $('#s-size'), res = $('#s-res'), work = $('#s-work');
+  let cur = null;
+
+  function dims() {
+    let w, h;
+    if (unit.value === 'cm') {
+      const d = +dpi.value;
+      w = Math.round(+cmW.value / 2.54 * d);
+      h = Math.round(+cmH.value / 2.54 * d);
+    } else {
+      w = Math.round(+pxW.value);
+      h = Math.round(+pxH.value);
+    }
+    if (!(w >= 20 && h >= 20 && w <= 4000 && h <= 4000)) return null;
+    return { w, h };
+  }
+
+  function draw() {
+    const d = dims();
+    if (!d) { size.textContent = 'Ukuran belum valid. Isi angka yang masuk akal (hasil 20 sampai 4000 piksel).'; return; }
+    size.textContent = `Hasil akhir: ${d.w} x ${d.h} piksel`;
+    if (!cur) return;
+    cv.width = d.w; cv.height = d.h;
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, d.w, d.h);
+    const iw = cur.img.naturalWidth, ih = cur.img.naturalHeight;
+    const s = Math.max(d.w / iw, d.h / ih) * (+zoom.value / 100);
+    const dw = iw * s, dh = ih * s;
+    const x = -(dw - d.w) * (+sx.value / 100);
+    const y = -(dh - d.h) * (+sy.value / 100);
+    ctx.imageSmoothingQuality = 'high';
+    ctx.drawImage(cur.img, x, y, dw, dh);
+  }
+
+  function clearPick() {
+    if (go.disabled) return;   // sedang menyimpan
+    if (cur) URL.revokeObjectURL(cur.url);
+    cur = null;
+    hide(work); hide($('#s-picked')); hide(msg);
+    res.textContent = '';
+  }
+
+  function syncUnit() {
+    const cm = unit.value === 'cm';
+    $('#s-cmbox').hidden = !cm;
+    $('#s-pxbox').hidden = cm;
+    $$('#s-chips .chip').forEach(c => c.classList.toggle('on', cm && c.dataset.w === String(+cmW.value) && c.dataset.h === String(+cmH.value)));
+    draw();
+  }
+
+  $$('#s-chips .chip').forEach(ch => ch.addEventListener('click', () => {
+    unit.value = 'cm';
+    cmW.value = ch.dataset.w; cmH.value = ch.dataset.h;
+    syncUnit();
+  }));
+  [unit, cmW, cmH, pxW, pxH, dpi].forEach(el => el.addEventListener('input', syncUnit));
+  [zoom, sx, sy].forEach(el => el.addEventListener('input', draw));
+
+  bindDrop(drop, input, async files => {
+    hide(msg); res.textContent = '';
+    try {
+      if (cur) URL.revokeObjectURL(cur.url);
+      cur = await loadImage(files[0]);
+      pickedRow($('#s-picked'), cur.file, cur.url, `${fmt(cur.file.size)}, ${cur.img.naturalWidth} x ${cur.img.naturalHeight} piksel`, clearPick);
+      zoom.value = 100; sx.value = 50; sy.value = 50;
+      show(work);
+      draw();
+      work.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } catch (e) {
+      cur = null; hide(work); hide($('#s-picked'));
+      showMsg(msg, e.message); show(msg);
+    }
+  });
+
+  go.addEventListener('click', async () => {
+    const d = dims();
+    if (!cur || !d) { showMsg(msg, 'Periksa dulu ukuran hasil yang kamu isi.'); return; }
+    hide(msg);
+    go.disabled = true;
+    try {
+      draw();
+      const jpg = fmtSel.value === 'jpg';
+      const limit = Math.round(+maxkb.value);
+      let blob, note = '';
+      if (jpg) {
+        if (limit >= 5) {
+          const r = await jpegUnder(cv, limit * 1024);
+          blob = r.blob;
+          if (!r.ok) note = ` Batas ${nf0.format(limit)} KB belum tercapai, coba perbesar batasnya atau kecilkan ukuran piksel.`;
+        } else {
+          blob = await toBlob(cv, 'image/jpeg', 0.95);
+        }
+      } else {
+        blob = await toBlob(cv, 'image/png');
+      }
+      saveBlob(blob, `${baseName(cur.file.name)}-pasfoto-${d.w}x${d.h}.${jpg ? 'jpg' : 'png'}`);
+      res.textContent = `Pasfoto diunduh: ${d.w} x ${d.h} piksel, ${fmt(blob.size)}.` + note;
+    } catch (e) {
+      showMsg(msg, 'Pasfoto gagal dibuat. Coba lagi dengan foto lain.');
+    } finally {
+      go.disabled = false;
+    }
+  });
+
+  syncUnit();
+})();
+
+/* ========== 4. Hitung kata ========== */
+(() => {
+  const ta = $('#w-text'), target = $('#w-target'), msg = $('#w-msg');
+  const wordRe = /[\p{L}\p{N}]+(?:['\u2019\-][\p{L}\p{N}]+)*/gu;
+
+  function update() {
+    const t = ta.value;
+    const words = (t.match(wordRe) || []).length;
+    const chars = t.length;
+    const nospace = t.replace(/\s/g, '').length;
+    const sent = t.split(/[.!?]+(?:\s+|$)|\n+/).filter(s => /[\p{L}\p{N}]/u.test(s)).length;
+    const para = t.split(/\n+/).filter(s => s.trim()).length;
+    const mins = words === 0 ? 0 : Math.max(1, Math.round(words / 200));
+    $('#w-words').textContent = nf0.format(words);
+    $('#w-chars').textContent = nf0.format(chars);
+    $('#w-nospace').textContent = nf0.format(nospace);
+    $('#w-sent').textContent = nf0.format(sent);
+    $('#w-para').textContent = nf0.format(para);
+    $('#w-read').textContent = `${nf0.format(mins)} mnt`;
+
+    const tg = Math.round(+target.value);
+    const bar = $('#w-bar'), info = $('#w-tinfo');
+    if (tg > 0) {
+      bar.style.width = Math.min(100, words / tg * 100) + '%';
+      bar.classList.toggle('over', words > tg);
+      if (words < tg) info.textContent = `Kurang ${nf0.format(tg - words)} kata lagi dari target ${nf0.format(tg)} kata.`;
+      else if (words === tg) info.textContent = 'Pas! Jumlah katamu sama dengan target.';
+      else info.textContent = `Lebih ${nf0.format(words - tg)} kata dari target ${nf0.format(tg)} kata.`;
+    } else {
+      bar.style.width = '0'; bar.classList.remove('over');
+      info.textContent = 'Isi target untuk melihat sisa kata yang perlu ditulis.';
+    }
+  }
+  ta.addEventListener('input', update);
+  target.addEventListener('input', update);
+  $('#w-clear').addEventListener('click', () => { ta.value = ''; hide(msg); update(); ta.focus(); });
+  $('#w-paste').addEventListener('click', async () => {
+    hide(msg);
+    try {
+      const txt = await navigator.clipboard.readText();
+      ta.value = txt; update();
+    } catch (e) {
+      showMsg(msg, 'Browser tidak mengizinkan membaca clipboard. Tekan dan tahan di kotak teks, lalu pilih Tempel.');
+    }
+  });
+  update();
+})();
+
+/* ========== 5. Hitung IPK ========== */
+(() => {
+  const weights = { 'A': 4, 'A-': 3.75, 'B+': 3.25, 'B': 3, 'B-': 2.75, 'C+': 2.25, 'C': 2, 'D': 1, 'E': 0 };
+  const rowsBox = $('#i-rows');
+
+  function addRow() {
+    const row = document.createElement('div');
+    row.className = 'irow';
+    row.innerHTML =
+      '<input class="r-name" type="text" placeholder="Nama mata kuliah (boleh kosong)" aria-label="Nama mata kuliah" autocomplete="off">' +
+      '<input class="r-sks" type="number" inputmode="numeric" min="1" max="12" placeholder="SKS" aria-label="Jumlah SKS">' +
+      '<select class="r-grade" aria-label="Nilai huruf"><option value="">Nilai</option>' +
+      Object.keys(weights).map(g => `<option value="${g}">${g}</option>`).join('') + '</select>' +
+      '<button class="icon-btn r-del" type="button" aria-label="Hapus mata kuliah">\u00D7</button>';
+    row.querySelector('.r-del').addEventListener('click', () => { row.remove(); calc(); });
+    rowsBox.appendChild(row);
+  }
+
+  const wBox = $('#i-weights');
+  Object.keys(weights).forEach(g => {
+    const l = document.createElement('label');
+    l.textContent = 'Nilai ' + g;
+    const inp = document.createElement('input');
+    inp.type = 'number'; inp.step = '0.05'; inp.min = '0'; inp.max = '4'; inp.inputMode = 'decimal';
+    inp.value = weights[g];
+    inp.addEventListener('input', () => { weights[g] = parseFloat(inp.value) || 0; calc(); });
+    l.appendChild(inp);
+    wBox.appendChild(l);
+  });
+
+  function predikat(v) {
+    if (v > 3.5) return 'Dengan Pujian';
+    if (v >= 2.76) return 'Sangat Memuaskan';
+    if (v >= 2) return 'Memuaskan';
+    return 'Perlu ditingkatkan';
+  }
+
+  function calc() {
+    let sks = 0, pts = 0;
+    $$('.irow', rowsBox).forEach(r => {
+      const s = parseFloat($('.r-sks', r).value);
+      const g = $('.r-grade', r).value;
+      if (s > 0 && g) { sks += s; pts += s * weights[g]; }
+    });
+    const ips = sks > 0 ? pts / sks : null;
+    $('#i-ips').textContent = ips === null ? '-' : nf2.format(ips);
+    $('#i-info').textContent = ips === null
+      ? 'Isi SKS dan nilai untuk mulai menghitung.'
+      : `Total ${nf.format(sks)} SKS. Perkiraan predikat: ${predikat(ips)}.`;
+
+    const pipk = parseFloat(String($('#i-pipk').value).replace(',', '.'));
+    const psks = parseFloat($('#i-psks').value);
+    const box = $('#i-cumbox');
+    if (ips !== null && pipk >= 0 && pipk <= 4 && psks > 0) {
+      const ipk = (pipk * psks + pts) / (psks + sks);
+      $('#i-ipk').textContent = nf2.format(ipk);
+      $('#i-cuminfo').textContent = `Total ${nf.format(psks + sks)} SKS. Perkiraan predikat: ${predikat(ipk)}.`;
+      show(box);
+    } else {
+      hide(box);
+    }
+  }
+
+  rowsBox.addEventListener('input', calc);
+  rowsBox.addEventListener('change', calc);
+  $('#i-pipk').addEventListener('input', calc);
+  $('#i-psks').addEventListener('input', calc);
+  $('#i-add').addEventListener('click', () => { addRow(); calc(); const last = rowsBox.lastElementChild; if (last) $('.r-name', last).focus(); });
+  $('#i-reset').addEventListener('click', () => {
+    rowsBox.innerHTML = '';
+    for (let i = 0; i < 5; i++) addRow();
+    calc();
+  });
+
+  for (let i = 0; i < 5; i++) addRow();
+  calc();
+})();
+
+/* ========== 6. Hapus latar belakang ========== */
+(() => {
+  const drop = $('#b-drop'), input = $('#b-file'), cv = $('#b-cv'), ctx = cv.getContext('2d');
+  const work = $('#b-work'), tol = $('#b-tol'), soft = $('#b-soft'), fmtSel = $('#b-fmt');
+  const colorIn = $('#b-color'), go = $('#b-go'), msg = $('#b-msg'), note = $('#b-note'), res = $('#b-res');
+  const cut = document.createElement('canvas');
+  let cur = null, W = 0, H = 0, src = null, sample = null, seed = null, bgColor = null, timer = null;
+
+  function patch(x0, y0, n) {
+    const d = src.data;
+    let r = 0, g = 0, b = 0, c = 0;
+    for (let y = Math.max(0, y0); y < Math.min(H, y0 + n); y++) {
+      for (let x = Math.max(0, x0); x < Math.min(W, x0 + n); x++) {
+        const i = (y * W + x) * 4;
+        r += d[i]; g += d[i + 1]; b += d[i + 2]; c++;
+      }
+    }
+    return c ? [r / c, g / c, b / c] : [255, 255, 255];
+  }
+
+  /* Pilih warna sudut foto yang paling mirip dengan sudut lain */
+  function autoSample() {
+    const n = Math.max(2, Math.min(8, Math.floor(Math.min(W, H) / 20)));
+    const ps = [patch(0, 0, n), patch(W - n, 0, n), patch(0, H - n, n), patch(W - n, H - n, n)];
+    const dist = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]);
+    let best = 0, bestSum = Infinity;
+    ps.forEach((p, i) => {
+      const s = ps.reduce((acc, q) => acc + dist(p, q), 0);
+      if (s < bestSum) { bestSum = s; best = i; }
+    });
+    return ps[best];
+  }
+
+  function blurAlpha(a, r) {
+    const tmp = new Float32Array(W * H), out = new Float32Array(W * H);
+    for (let y = 0; y < H; y++) {
+      for (let x = 0; x < W; x++) {
+        let s = 0, c = 0;
+        for (let k = -r; k <= r; k++) {
+          const xx = x + k;
+          if (xx >= 0 && xx < W) { s += a[y * W + xx]; c++; }
+        }
+        tmp[y * W + x] = s / c;
+      }
+    }
+    for (let y = 0; y < H; y++) {
+      for (let x = 0; x < W; x++) {
+        let s = 0, c = 0;
+        for (let k = -r; k <= r; k++) {
+          const yy = y + k;
+          if (yy >= 0 && yy < H) { s += tmp[yy * W + x]; c++; }
+        }
+        out[y * W + x] = s / c;
+      }
+    }
+    return out;
+  }
+
+  function process() {
+    if (!src || !sample) return;
+    const d = src.data;
+    const thr = (+tol.value) * 2, thr2 = thr * thr;
+    const sr = sample[0], sg = sample[1], sb = sample[2];
+    const bg = new Uint8Array(W * H);
+    const stack = new Int32Array(W * H);
+    let sp = 0;
+    const push = p => {
+      if (bg[p]) return;
+      const i = p * 4;
+      const dr = d[i] - sr, dg = d[i + 1] - sg, db = d[i + 2] - sb;
+      if (dr * dr + dg * dg + db * db <= thr2) { bg[p] = 1; stack[sp++] = p; }
+    };
+    for (let x = 0; x < W; x++) { push(x); push((H - 1) * W + x); }
+    for (let y = 0; y < H; y++) { push(y * W); push(y * W + W - 1); }
+    if (seed !== null) push(seed);
+    while (sp > 0) {
+      const p = stack[--sp];
+      const x = p % W;
+      if (x > 0) push(p - 1);
+      if (x < W - 1) push(p + 1);
+      if (p >= W) push(p - W);
+      if (p < W * (H - 1)) push(p + W);
+    }
+
+    let alpha = new Float32Array(W * H);
+    for (let p = 0; p < W * H; p++) alpha[p] = bg[p] ? 0 : 255;
+    const r = +soft.value;
+    if (r > 0) alpha = blurAlpha(alpha, r);
+
+    const out = new ImageData(W, H);
+    const o = out.data;
+    for (let p = 0; p < W * H; p++) {
+      const i = p * 4;
+      o[i] = d[i]; o[i + 1] = d[i + 1]; o[i + 2] = d[i + 2];
+      o[i + 3] = alpha[p];
+    }
+    cut.width = W; cut.height = H;
+    cut.getContext('2d').putImageData(out, 0, 0);
+    paint();
+  }
+
+  function paint() {
+    ctx.clearRect(0, 0, W, H);
+    if (bgColor) { ctx.fillStyle = bgColor; ctx.fillRect(0, 0, W, H); }
+    ctx.drawImage(cut, 0, 0);
+  }
+
+  function clearPick() {
+    if (go.disabled) return;   // sedang menyimpan
+    clearTimeout(timer);
+    if (cur) URL.revokeObjectURL(cur.url);
+    cur = null; src = null; seed = null; sample = null;
+    hide(work); hide($('#b-picked')); hide(msg);
+    res.textContent = '';
+  }
+
+  function schedule() {
+    clearTimeout(timer);
+    timer = setTimeout(process, 80);
+  }
+
+  function syncFormat() {
+    const transparent = bgColor === null;
+    fmtSel.disabled = transparent;
+    if (transparent) {
+      fmtSel.value = 'png';
+      note.textContent = 'Latar transparan hanya bisa disimpan sebagai PNG.';
+    } else {
+      note.textContent = 'Pilih JPG kalau portal upload tidak menerima PNG.';
+    }
+  }
+
+  $$('#b-chips .chip').forEach(ch => ch.addEventListener('click', () => {
+    $$('#b-chips .chip').forEach(c => c.classList.remove('on'));
+    ch.classList.add('on');
+    bgColor = ch.dataset.c === 'none' ? null : ch.dataset.c;
+    syncFormat();
+    if (src) paint();
+  }));
+  colorIn.addEventListener('input', () => {
+    $$('#b-chips .chip').forEach(c => c.classList.remove('on'));
+    bgColor = colorIn.value;
+    syncFormat();
+    if (src) paint();
+  });
+  [tol, soft].forEach(el => el.addEventListener('input', schedule));
+
+  $('#b-auto').addEventListener('click', () => {
+    if (!src) return;
+    seed = null;
+    sample = autoSample();
+    process();
+  });
+
+  cv.addEventListener('click', ev => {
+    if (!src) return;
+    const rect = cv.getBoundingClientRect();
+    const x = Math.min(W - 1, Math.max(0, Math.floor((ev.clientX - rect.left) * W / rect.width)));
+    const y = Math.min(H - 1, Math.max(0, Math.floor((ev.clientY - rect.top) * H / rect.height)));
+    /* Ambil warna dari foto asli, bukan dari hasil yang sudah transparan */
+    sample = patch(x - 2, y - 2, 5);
+    seed = y * W + x;
+    process();
+  });
+
+  bindDrop(drop, input, async files => {
+    hide(msg); res.textContent = '';
+    try {
+      if (cur) URL.revokeObjectURL(cur.url);
+      cur = await loadImage(files[0]);
+      pickedRow($('#b-picked'), cur.file, cur.url, `${fmt(cur.file.size)}, ${cur.img.naturalWidth} x ${cur.img.naturalHeight} piksel`, clearPick);
+      const k = Math.min(1, 1600 / Math.max(cur.img.naturalWidth, cur.img.naturalHeight));
+      W = Math.max(1, Math.round(cur.img.naturalWidth * k));
+      H = Math.max(1, Math.round(cur.img.naturalHeight * k));
+      const c = document.createElement('canvas');
+      c.width = W; c.height = H;
+      const cx = c.getContext('2d', { willReadFrequently: true });
+      cx.imageSmoothingQuality = 'high';
+      cx.drawImage(cur.img, 0, 0, W, H);
+      src = cx.getImageData(0, 0, W, H);
+      cv.width = W; cv.height = H;
+      seed = null;
+      sample = autoSample();
+      show(work);
+      syncFormat();
+      process();
+      work.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } catch (e) {
+      cur = null; src = null; hide(work); hide($('#b-picked'));
+      showMsg(msg, e.message || 'Foto tidak bisa diproses. Coba foto lain.');
+    }
+  });
+
+  go.addEventListener('click', async () => {
+    if (!src) return;
+    go.disabled = true;
+    try {
+      const png = bgColor === null || fmtSel.value === 'png';
+      const blob = await toBlob(cv, png ? 'image/png' : 'image/jpeg', 0.95);
+      saveBlob(blob, `${baseName(cur.file.name)}-hapus-latar.${png ? 'png' : 'jpg'}`);
+      res.textContent = `Foto diunduh: ${W} x ${H} piksel, ${fmt(blob.size)}.`;
+    } catch (e) {
+      showMsg(msg, 'Hasil gagal disimpan. Coba lagi.');
+    } finally {
+      go.disabled = false;
+    }
+  });
+})();
+
+/* ========== 7. Pembuat QR code ========== */
+(() => {
+  const input = $('#q-text'), sizeSel = $('#q-size'), msg = $('#q-msg'), res = $('#q-res');
+  const cv = $('#q-cv'), ctx = cv.getContext('2d'), info = $('#q-info'), hint = $('#q-hint');
+  let dark = '#111827', cur = null, timer = null;
+  const Q = 4;   // jarak kosong di sekeliling QR (dalam modul)
+
+  const slug = t => {
+    try { return new URL(t).hostname.replace(/^www\./, '').replace(/[^a-z0-9.-]/gi, '-'); }
+    catch (e) { return t.replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '').slice(0, 24) || 'teks'; }
+  };
+  const looksLikeDomain = t => !/^[a-z][a-z0-9+.\-]*:/i.test(t) && /^[^\s\/:@]+\.[a-z]{2,}(\/\S*)?$/i.test(t);
+
+  function draw() {
+    const text = input.value.trim();
+    hide(msg); cur = null;
+    hint.hidden = !looksLikeDomain(text);
+    if (!text) { hide(res); return; }
+    const r = QR.make(text, 'M') || QR.make(text, 'L');
+    if (!r) {
+      hide(res);
+      showMsg(msg, 'Teks terlalu panjang untuk dijadikan QR code. Coba persingkat tautannya.');
+      return;
+    }
+    const total = r.size + 2 * Q;
+    const scale = Math.max(1, Math.floor(+sizeSel.value / total));
+    cv.width = cv.height = total * scale;
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, cv.width, cv.height);
+    ctx.fillStyle = dark;
+    for (let y = 0; y < r.size; y++) for (let x = 0; x < r.size; x++) {
+      if (r.isDark(y, x)) ctx.fillRect((x + Q) * scale, (y + Q) * scale, scale, scale);
+    }
+    cur = { r, text, name: slug(text) };
+    info.textContent = `Ukuran gambar ${cv.width} x ${cv.height} piksel.`;
+    show(res);
+  }
+  const later = () => { clearTimeout(timer); timer = setTimeout(draw, 150); };
+  input.addEventListener('input', later);
+  sizeSel.addEventListener('change', draw);
+  $('#q-https').addEventListener('click', () => { input.value = 'https://' + input.value.trim(); draw(); input.focus(); });
+  $$('#q-colors .chip').forEach(ch => ch.addEventListener('click', () => {
+    $$('#q-colors .chip').forEach(c => c.classList.remove('on'));
+    ch.classList.add('on');
+    dark = ch.dataset.c;
+    draw();
+  }));
+
+  $('#q-png').addEventListener('click', async () => {
+    if (!cur) return;
+    saveBlob(await toBlob(cv, 'image/png'), `qr-${cur.name}.png`);
+  });
+  $('#q-svg').addEventListener('click', () => {
+    if (!cur) return;
+    const { r } = cur, t = r.size + 2 * Q;
+    let p = '';
+    for (let y = 0; y < r.size; y++) {
+      let x = 0;
+      while (x < r.size) {
+        if (r.isDark(y, x)) {
+          const s = x;
+          while (x < r.size && r.isDark(y, x)) x++;
+          p += `M${s + Q} ${y + Q}h${x - s}v1h-${x - s}z`;
+        } else x++;
+      }
+    }
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${t} ${t}" width="${t * 10}" height="${t * 10}" shape-rendering="crispEdges"><rect width="${t}" height="${t}" fill="#ffffff"/><path d="${p}" fill="${dark}"/></svg>`;
+    saveBlob(new Blob([svg], { type: 'image/svg+xml' }), `qr-${cur.name}.svg`);
+  });
+})();
+
+/* ========== 8. Foto jadi pixel art ========== */
+(() => {
+  const drop = $('#x-drop'), input = $('#x-file'), cv = $('#x-cv'), ctx = cv.getContext('2d');
+  const work = $('#x-work'), size = $('#x-size'), sizeVal = $('#x-sizeval'), pal = $('#x-pal');
+  const dith = $('#x-dither'), go = $('#x-go'), res = $('#x-res'), msg = $('#x-msg'), info = $('#x-info');
+  let cur = null, timer = null;
+
+  const hex = list => list.map(h => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)]);
+  const PRESETS = {
+    gb: hex(['#0f380f', '#306230', '#8bac0f', '#9bbc0f']),
+    pico: hex(['#000000', '#1d2b53', '#7e2553', '#008751', '#ab5236', '#5f574f', '#c2c3c7', '#fff1e8',
+               '#ff004d', '#ffa300', '#ffec27', '#00e436', '#29adff', '#83769c', '#ff77a8', '#ffccaa']),
+    cga: hex(['#000000', '#55ffff', '#ff55ff', '#ffffff']),
+    bw: hex(['#000000', '#ffffff'])
+  };
+  const BAYER = [[0, 8, 2, 10], [12, 4, 14, 6], [3, 11, 1, 9], [15, 7, 13, 5]];
+
+  /* Kecilkan bertahap supaya hasilnya halus dan tidak bergerigi */
+  function downscale(img, w, h) {
+    let src = img, cw = img.naturalWidth, ch = img.naturalHeight;
+    while (cw / 2 > w && ch / 2 > h) {
+      cw = Math.max(w, Math.floor(cw / 2)); ch = Math.max(h, Math.floor(ch / 2));
+      const t = document.createElement('canvas');
+      t.width = cw; t.height = ch;
+      const x = t.getContext('2d');
+      x.imageSmoothingQuality = 'high';
+      x.drawImage(src, 0, 0, cw, ch);
+      src = t;
+    }
+    const out = document.createElement('canvas');
+    out.width = w; out.height = h;
+    const o = out.getContext('2d', { willReadFrequently: true });
+    o.fillStyle = '#fff'; o.fillRect(0, 0, w, h);
+    o.imageSmoothingQuality = 'high';
+    o.drawImage(src, 0, 0, w, h);
+    return out;
+  }
+
+  function render() {
+    if (!cur) return;
+    const long = +size.value;
+    sizeVal.textContent = long;
+    const iw = cur.img.naturalWidth, ih = cur.img.naturalHeight, k = long / Math.max(iw, ih);
+    const gw = Math.max(1, Math.round(iw * k)), gh = Math.max(1, Math.round(ih * k));
+    const small = downscale(cur.img, gw, gh);
+    const sctx = small.getContext('2d');
+    const id = sctx.getImageData(0, 0, gw, gh), d = id.data;
+
+    const mode = pal.value;
+    dith.disabled = mode === 'orig';
+    if (mode !== 'orig') {
+      let palette;
+      if (PRESETS[mode]) palette = PRESETS[mode];
+      else {
+        const px = [];
+        for (let i = 0; i < d.length; i += 4) px.push([d[i], d[i + 1], d[i + 2]]);
+        palette = medianCut(px, +mode.replace('auto', ''));
+      }
+      const spread = dith.checked ? ditherSpread(palette.length) : 0;
+      for (let y = 0; y < gh; y++) for (let x = 0; x < gw; x++) {
+        const i = (y * gw + x) * 4;
+        let r = d[i], g = d[i + 1], b = d[i + 2];
+        if (spread) { const t = (BAYER[y & 3][x & 3] / 16 - 0.5) * spread; r += t; g += t; b += t; }
+        const c = nearestColor(palette, r, g, b);
+        d[i] = c[0]; d[i + 1] = c[1]; d[i + 2] = c[2];
+      }
+    }
+    sctx.putImageData(id, 0, 0);
+
+    const scale = Math.max(1, Math.round(1024 / Math.max(gw, gh)));
+    cv.width = gw * scale; cv.height = gh * scale;
+    ctx.imageSmoothingEnabled = false;
+    ctx.drawImage(small, 0, 0, cv.width, cv.height);
+    info.textContent = `${gw} x ${gh} kotak, ukuran gambar ${cv.width} x ${cv.height} piksel.`;
+  }
+  const later = () => { clearTimeout(timer); timer = setTimeout(render, 60); };
+  size.addEventListener('input', () => { sizeVal.textContent = size.value; later(); });
+  pal.addEventListener('change', render);
+  dith.addEventListener('change', render);
+
+  function clearPick() {
+    if (go.disabled) return;
+    if (cur) URL.revokeObjectURL(cur.url);
+    cur = null;
+    hide(work); hide($('#x-picked')); hide(msg);
+    res.textContent = '';
+  }
+
+  bindDrop(drop, input, async files => {
+    hide(msg); res.textContent = '';
+    try {
+      if (cur) URL.revokeObjectURL(cur.url);
+      cur = await loadImage(files[0]);
+      pickedRow($('#x-picked'), cur.file, cur.url, `${fmt(cur.file.size)}, ${cur.img.naturalWidth} x ${cur.img.naturalHeight} piksel`, clearPick);
+      show(work);
+      render();
+      work.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } catch (e) {
+      cur = null; hide(work); hide($('#x-picked'));
+      showMsg(msg, e.message || 'Foto tidak bisa dibuka. Coba foto lain.');
+    }
+  });
+
+  go.addEventListener('click', async () => {
+    if (!cur) return;
+    go.disabled = true;
+    try {
+      const blob = await toBlob(cv, 'image/png');
+      saveBlob(blob, `${baseName(cur.file.name)}-pixel-art.png`);
+      res.textContent = `Pixel art diunduh: ${cv.width} x ${cv.height} piksel, ${fmt(blob.size)}.`;
+    } catch (e) {
+      showMsg(msg, 'Gambar gagal disimpan. Coba lagi.');
+    } finally {
+      go.disabled = false;
+    }
+  });
+})();
+
+/* ========== 9. Pengingat tugas dan jadwal kuliah ========== */
+(() => {
+  const PRI = ['Biasa', 'Penting', 'Mendesak'];
+  const DAYS = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'];
+  const dfmt = new Intl.DateTimeFormat('id-ID', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+  const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+  const todayIdx = () => (new Date().getDay() + 6) % 7;   // Senin = 0
+
+  function el(tag, cls, text) {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text !== undefined) e.textContent = text;
+    return e;
+  }
+  function iconBtn(label, html, fn) {
+    const b = el('button', 'icon-btn');
+    b.type = 'button';
+    b.setAttribute('aria-label', label);
+    b.innerHTML = html;
+    b.addEventListener('click', fn);
+    return b;
+  }
+  const ICON_EDIT = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16z"/></svg>';
+
+  /* ---- Penyimpanan di browser ---- */
+  let storeOk = true;
+  const mem = {};
+  try { localStorage.setItem('beresin.test', '1'); localStorage.removeItem('beresin.test'); } catch (e) { storeOk = false; }
+  const load = (k, d) => {
+    try { if (storeOk) { const v = localStorage.getItem(k); if (v) return JSON.parse(v); return d; } } catch (e) { /* pakai memori */ }
+    return mem[k] !== undefined ? mem[k] : d;
+  };
+  const save = (k, v) => {
+    mem[k] = v;
+    if (storeOk) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* abaikan */ } }
+  };
+  const asArray = v => Array.isArray(v) ? v : [];
+  let tasks = asArray(load('beresin.tasks', [])).filter(t => t && t.id && Number.isFinite(t.due));
+  let sched = asArray(load('beresin.sched', [])).filter(s => s && s.id);
+  if (!storeOk) show($('#t-storewarn'));
+
+  /* ---- Elemen ---- */
+  const fTitle = $('#t-title'), fCourse = $('#t-course'), fDue = $('#t-due'), fPri = $('#t-pri');
+  const bSave = $('#t-save'), bCancel = $('#t-cancel'), tMsg = $('#t-msg'), sortSel = $('#t-sort');
+  let editingId = null;
+
+  const defaultDue = () => { const d = new Date(); d.setDate(d.getDate() + 1); d.setHours(23, 59, 0, 0); return toLocalInput(d.getTime()); };
+  fDue.value = defaultDue();
+  $('#j-day').value = String(todayIdx());
+
+  /* ---- Notifikasi ---- */
+  const hasN = 'Notification' in window;
+  let swReg = null, checking = false;
+  if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
+    navigator.serviceWorker.register('sw.js').then(r => { swReg = r; }).catch(() => { /* sw.js tidak ada, tidak apa-apa */ });
+  }
+
+  function updateNotifUI() {
+    const st = $('#t-nstate'), btn = $('#t-nbtn'), test = $('#t-ntest');
+    if (!hasN) {
+      st.textContent = 'Browser ini belum mendukung notifikasi. Pengingat tetap tampil di halaman ini dan di beranda.';
+      hide(btn); hide(test); return;
+    }
+    const p = Notification.permission;
+    if (p === 'granted') { st.textContent = 'Notifikasi aktif. Kamu akan diingatkan 1 hari sebelum tenggat.'; hide(btn); show(test); }
+    else if (p === 'denied') { st.textContent = 'Notifikasi diblokir di browser ini. Izinkan lewat pengaturan situs (ikon gembok di kolom alamat), lalu muat ulang halaman.'; hide(btn); hide(test); }
+    else { st.textContent = 'Aktifkan notifikasi supaya Beresin bisa mengingatkanmu 1 hari sebelum tenggat.'; show(btn); hide(test); }
+  }
+
+  async function notify(body, tag) {
+    if (!hasN || Notification.permission !== 'granted') return false;
+    const title = 'Pengingat Tugas';
+    const logo = $('.logo');
+    const icon = logo ? logo.src : undefined;
+    try {
+      const reg = swReg || (navigator.serviceWorker && await navigator.serviceWorker.getRegistration());
+      if (reg && reg.active && reg.showNotification) {
+        await reg.showNotification(title, { body, icon, badge: icon, tag });
+        return true;
+      }
+    } catch (e) { /* coba cara lain */ }
+    try {
+      const n = new Notification(title, { body, icon, tag });
+      n.onclick = () => { window.focus(); location.hash = '#/tugas'; n.close(); };
+      return true;
+    } catch (e) { return false; }
+  }
+
+  async function checkReminders() {
+    if (checking) return;
+    checking = true;
+    try {
+      const now = Date.now();
+      let changed = false;
+      for (const t of tasks) {
+        if (!shouldNotify(t, now)) continue;
+        if (await notify(reminderBody(t.title, t.due, now), 'task-' + t.id)) { t.notified = true; changed = true; }
+      }
+      if (changed) save('beresin.tasks', tasks);
+    } finally { checking = false; }
+  }
+
+  $('#t-nbtn').addEventListener('click', async () => {
+    if (!hasN) return;
+    try { await Notification.requestPermission(); } catch (e) { /* abaikan */ }
+    updateNotifUI();
+    if (Notification.permission === 'granted') {
+      await notify('Notifikasi aktif. Beresin akan mengingatkanmu 1 hari sebelum tenggat tugas.', 'beresin-on');
+      checkReminders();
+    }
+  });
+  $('#t-ntest').addEventListener('click', async () => {
+    const ok = await notify('Laporan Praktikum akan jatuh tempo besok. Jangan lupa diselesaikan!', 'beresin-contoh');
+    if (!ok) showMsg(tMsg, 'Notifikasi contoh tidak bisa ditampilkan di browser ini. Pengingat tetap tampil di halaman.');
+  });
+
+  /* ---- Tampilan ---- */
+  function renderAlerts(now) {
+    const box = $('#t-alert');
+    box.innerHTML = '';
+    const open = tasks.filter(t => !t.done);
+    const soon = open.filter(t => t.due >= now && t.due - now <= DAY_MS).sort((a, b) => a.due - b.due);
+    const late = open.filter(t => t.due < now);
+    soon.slice(0, 3).forEach(t => box.appendChild(el('div', 'alert', reminderBody(t.title, t.due, now))));
+    if (soon.length > 3) box.appendChild(el('div', 'alert', `Dan ${soon.length - 3} tugas lain jatuh tempo dalam 24 jam.`));
+    if (late.length) box.appendChild(el('div', 'alert late', late.length === 1 ? `1 tugas sudah lewat tenggat: ${late[0].title}.` : `${late.length} tugas sudah lewat tenggat.`));
+
+    const home = $('#home-alert');
+    if (soon.length) {
+      home.textContent = soon.length === 1
+        ? `${soon[0].title} jatuh tempo dalam 24 jam. Ketuk untuk melihat.`
+        : `${soon.length} tugas jatuh tempo dalam 24 jam. Ketuk untuk melihat.`;
+      show(home);
+    } else hide(home);
+  }
+
+  function taskItem(t, now, done) {
+    const li = el('li', 'task' + (t.pri ? ` p${t.pri}` : '') + (done ? ' done' : ''));
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.checked = done;
+    cb.setAttribute('aria-label', done ? 'Tandai belum selesai' : 'Tandai selesai');
+    cb.addEventListener('change', () => toggle(t.id));
+
+    const body = el('div');
+    body.appendChild(el('div', 'tt', t.title));
+    if (t.course) body.appendChild(el('div', 'tc', t.course));
+    body.appendChild(el('div', 'td', 'Tenggat: ' + dfmt.format(t.due)));
+    const badges = el('div', 'badges');
+    if (!done) { const c = fmtCountdown(t.due, now); badges.appendChild(el('span', 'badge ' + c.tone, c.text)); }
+    if (t.pri) badges.appendChild(el('span', 'badge p' + t.pri, PRI[t.pri]));
+    if (badges.children.length) body.appendChild(badges);
+
+    const acts = el('div', 'acts');
+    if (!done) acts.appendChild(iconBtn('Ubah tugas', ICON_EDIT, () => startEdit(t.id)));
+    acts.appendChild(iconBtn('Hapus tugas', '&times;', () => removeTask(t.id)));
+    li.append(cb, body, acts);
+    return li;
+  }
+
+  function renderTasks(now) {
+    const open = tasks.filter(t => !t.done);
+    const done = tasks.filter(t => t.done);
+    open.sort(sortSel.value === 'pri' ? (a, b) => (b.pri - a.pri) || (a.due - b.due) : (a, b) => a.due - b.due);
+    done.sort((a, b) => (b.doneAt || 0) - (a.doneAt || 0));
+
+    const list = $('#t-list'), dlist = $('#t-donelist');
+    list.innerHTML = ''; dlist.innerHTML = '';
+    open.forEach(t => list.appendChild(taskItem(t, now, false)));
+    done.forEach(t => dlist.appendChild(taskItem(t, now, true)));
+    $('#t-count').textContent = open.length;
+    $('#t-donecount').textContent = done.length;
+    $('#t-empty').hidden = open.length > 0;
+    $('#t-donebox').hidden = done.length === 0;
+  }
+
+  function renderSched() {
+    const box = $('#j-days');
+    box.innerHTML = '';
+    const today = todayIdx();
+    DAYS.forEach((name, i) => {
+      const items = sched.filter(s => s.day === i).sort((a, b) => (a.start || '').localeCompare(b.start || ''));
+      const day = el('div', 'day' + (i === today ? ' now' : ''));
+      const h = el('h4', '', name);
+      if (i === today) h.appendChild(el('span', 'badge today', 'Hari ini'));
+      day.appendChild(h);
+      if (!items.length) day.appendChild(el('p', 'hint', 'Tidak ada jadwal.')).style.margin = '0';
+      items.forEach(s => {
+        const row = el('div', 'cls');
+        row.appendChild(el('div', 'tm', `${s.start} - ${s.end}`));
+        const mid = el('div');
+        mid.appendChild(el('div', 'nm2', s.course));
+        if (s.lecturer) mid.appendChild(el('div', 'rm', 'Dosen: ' + s.lecturer));
+        if (s.room) mid.appendChild(el('div', 'rm', s.room));
+        row.appendChild(mid);
+        row.appendChild(iconBtn('Hapus jadwal', '&times;', () => {
+          if (!confirm(`Hapus jadwal ${s.course} hari ${name}?`)) return;
+          sched = sched.filter(x => x.id !== s.id);
+          save('beresin.sched', sched);
+          render();
+        }));
+        day.appendChild(row);
+      });
+      box.appendChild(day);
+    });
+  }
+
+  function renderCourses() {
+    const names = new Set();
+    tasks.forEach(t => t.course && names.add(t.course));
+    sched.forEach(s => s.course && names.add(s.course));
+    const dl = $('#t-courses');
+    dl.innerHTML = '';
+    [...names].sort().forEach(n => { const o = document.createElement('option'); o.value = n; dl.appendChild(o); });
+  }
+
+  function render() {
+    const now = Date.now();
+    renderAlerts(now);
+    renderTasks(now);
+    renderSched();
+    renderCourses();
+  }
+
+  /* ---- Aksi tugas ---- */
+  function resetForm() {
+    editingId = null;
+    fTitle.value = ''; fCourse.value = ''; fPri.value = '0'; fDue.value = defaultDue();
+    $('#t-formtitle').textContent = 'Tambah tugas';
+    bSave.textContent = 'Tambah tugas';
+    hide(bCancel); hide(tMsg);
+  }
+  function startEdit(id) {
+    const t = tasks.find(x => x.id === id);
+    if (!t) return;
+    editingId = id;
+    fTitle.value = t.title; fCourse.value = t.course || ''; fPri.value = String(t.pri || 0); fDue.value = toLocalInput(t.due);
+    $('#t-formtitle').textContent = 'Ubah tugas';
+    bSave.textContent = 'Simpan perubahan';
+    show(bCancel); hide(tMsg);
+    $('#t-formtitle').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    fTitle.focus();
+  }
+  function saveTask() {
+    const title = fTitle.value.trim();
+    const due = new Date(fDue.value).getTime();
+    if (!title) { showMsg(tMsg, 'Isi nama tugasnya dulu.'); fTitle.focus(); return; }
+    if (!Number.isFinite(due)) { showMsg(tMsg, 'Isi tanggal dan jam tenggatnya.'); fDue.focus(); return; }
+    hide(tMsg);
+    const data = { title, course: fCourse.value.trim(), due, pri: +fPri.value };
+    if (editingId) {
+      const t = tasks.find(x => x.id === editingId);
+      if (t) {
+        if (t.due !== due) t.notified = false;
+        Object.assign(t, data);
+      }
+    } else {
+      tasks.push({ id: uid(), done: false, notified: false, ...data });
+    }
+    save('beresin.tasks', tasks);
+    resetForm();
+    render();
+    checkReminders();
+  }
+  function toggle(id) {
+    const t = tasks.find(x => x.id === id);
+    if (!t) return;
+    t.done = !t.done;
+    t.doneAt = t.done ? Date.now() : null;
+    if (editingId === id) resetForm();
+    save('beresin.tasks', tasks);
+    render();
+  }
+  function removeTask(id) {
+    const t = tasks.find(x => x.id === id);
+    if (!t || !confirm(`Hapus tugas "${t.title}"?`)) return;
+    tasks = tasks.filter(x => x.id !== id);
+    if (editingId === id) resetForm();
+    save('beresin.tasks', tasks);
+    render();
+  }
+
+  bSave.addEventListener('click', saveTask);
+  bCancel.addEventListener('click', resetForm);
+  [fTitle, fCourse].forEach(i => i.addEventListener('keydown', e => { if (e.key === 'Enter') saveTask(); }));
+  sortSel.addEventListener('change', () => renderTasks(Date.now()));
+  $('#t-clear').addEventListener('click', () => {
+    const n = tasks.filter(t => t.done).length;
+    if (!n || !confirm(`Hapus ${n} tugas yang sudah selesai?`)) return;
+    tasks = tasks.filter(t => !t.done);
+    save('beresin.tasks', tasks);
+    render();
+  });
+
+  /* ---- Jadwal kuliah ---- */
+  const sMsg = $('#j-msg');
+  $('#j-add').addEventListener('click', () => {
+    const course = $('#j-course').value.trim();
+    const start = $('#j-start').value, end = $('#j-end').value;
+    if (!course) { showMsg(sMsg, 'Isi nama mata kuliahnya dulu.'); return; }
+    if (!start || !end) { showMsg(sMsg, 'Isi jam mulai dan jam selesai.'); return; }
+    if (end <= start) { showMsg(sMsg, 'Jam selesai harus setelah jam mulai.'); return; }
+    hide(sMsg);
+    sched.push({ id: uid(), course, day: +$('#j-day').value, start, end, lecturer: $('#j-lecturer').value.trim(), room: $('#j-room').value.trim() });
+    save('beresin.sched', sched);
+    $('#j-course').value = ''; $('#j-lecturer').value = ''; $('#j-room').value = '';
+    render();
+  });
+
+  /* ---- Tab Daftar tugas / Jadwal kuliah ---- */
+  $$('#t-tabs .chip').forEach(ch => ch.addEventListener('click', () => {
+    $$('#t-tabs .chip').forEach(c => c.classList.toggle('on', c === ch));
+    $('#t-pane-tasks').hidden = ch.dataset.p !== 'tasks';
+    $('#t-pane-sched').hidden = ch.dataset.p !== 'sched';
+  }));
+
+  /* ---- Pemeriksa berkala ---- */
+  function tick() { render(); checkReminders(); }
+  setInterval(tick, 30000);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) tick(); });
+  addEventListener('focus', tick);
+
+  updateNotifUI();
+  render();
+  checkReminders();
+})();
+</script>
+</body>
+</html>
