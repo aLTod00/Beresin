@@ -1,6 +1,4 @@
-/* Service worker Beresin (opsional).
-   Letakkan di folder yang sama dengan beresin.html agar notifikasi
-   pengingat tugas juga bisa tampil di Chrome Android. */
+/* Service worker Beresin. */
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', e => e.waitUntil(self.clients.claim()));
 
