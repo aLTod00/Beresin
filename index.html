@@ -2724,6 +2724,19 @@ const QR = (() => {
   render();
   checkReminders();
 })();
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("./sw.js")
+        .then((registration) => {
+          console.log("Service Worker Beresin aktif:", registration.scope);
+        })
+        .catch((error) => {
+          console.error("Gagal mendaftarkan Service Worker:", error);
+        });
+    });
+  }
 </script>
 </body>
 </html>
